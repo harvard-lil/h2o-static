@@ -1,0 +1,12 @@
+{% capture description %}
+  {% if page.type == "project" or page.type == "sketch" %}
+      {{ page.what_does_it_do }}
+  {% elsif page.description %}
+    {{ page.description }}
+  {% elsif page.excerpt %}
+    {{ page.excerpt | strip_html | strip_newlines | escape_once | truncate: 160 }}
+  {% else %}
+    {{ site.description }}
+  {% endif %}
+{% endcapture %}
+<meta name="description" content="{{ description | strip }}">

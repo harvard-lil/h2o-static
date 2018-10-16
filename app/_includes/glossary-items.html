@@ -1,0 +1,7 @@
+{% assign terms_list = site.data.terms | where: "include", true | sort: "name" %}
+<div class="docs-text">
+    {% for term in terms_list %}
+        <h2>{{ term.name }}</h2>
+        <p>{{ term.definition }}</p>
+    {% endfor %}
+</div>

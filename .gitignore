@@ -1,0 +1,8 @@
+.DS_Store
+.idea
+*~
+apache/logs
+app/.jekyll-metadata
+app/.sass-cache
+build/
+

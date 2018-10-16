@@ -1,0 +1,10 @@
+{% capture title %}
+  {% if page.title-tag %}
+    {{ page.title-tag | append: " | H2O" }}
+  {% elsif page.title %}
+    {{ page.title | append: " | H2O" }}
+  {% else %}
+    {{ site.title }}
+  {% endif %}
+{% endcapture %}
+ <title>{{ title | strip }}</title>

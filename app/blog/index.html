@@ -1,0 +1,47 @@
+---
+layout: blog-page
+title-tag: Blog
+slug: blog
+pagination:
+  enabled: true
+
+---
+
+<div class="post-index-container">
+{% for post in paginator.posts %}
+    <article class="post">
+        <div class="post-header">
+            <time class="post-date" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %-d, %Y" }}</time>
+            <h1 class="post-title" itemprop="headline"><a href="{{ post.url}} ">{{ post.title }}</a></h1>
+            {% if post.author %}
+                {% assign person_record = site.data.people[post.author] %}
+                <div class="post-author">Posted by {{ person_record.name }}</div>
+            {% endif %}
+        </div>
+        <div class="post-content">{{ post.content }}</div>
+        {% if post.tags.length > 0 %}
+        <div class="post-footer">
+          {% include tags.html tags=post.tags categories=post.categories %}
+        </div>
+        {% else %}
+        <br>
+        {% endif %}
+    </article>
+
+{% endfor %}
+  <!-- Pagination links -->
+  <div class="pagination sleeve">
+    <span class="page_number ">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
+    <div>
+    {% if paginator.previous_page %}
+      <a href="{{ paginator.previous_page_path }}" class="small-btn" role="button">Previous</a>
+    {% endif %}
+    {% if paginator.next_page %}
+      <a href="{{ paginator.next_page_path }}" class="small-btn" role="button">Next</a>
+    {% endif %}
+    </div>
+  </div>
+
+</div>
+
+

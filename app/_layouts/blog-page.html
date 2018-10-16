@@ -1,0 +1,22 @@
+---
+layout: default
+---
+<body class="{{ page.type }} {{ page.slug }}">
+
+{% include blog-header.html %}
+
+
+<a href="#main" class="skip-link">Skip to main content</a>
+<a href="#footer" class="skip-link">Skip to footer</a>
+
+
+    {{ content }}
+
+
+
+
+{% include footer.html %}
+
+<script src="{{ site.baseurl }}/assets/javascripts/main.js"></script>
+{% include custom-scripts.html %}
+</body>
