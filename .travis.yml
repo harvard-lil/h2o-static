@@ -1,3 +1,8 @@
+env:
+  global:
+  - secure: mBq26Lqb0x7b0y12/uVFiir4+ZspZChWPiLcwNMoMSs6zbV7P7WXrx5gOc8vZNKzDSFUfTB9u/f95eGaB+u/bvcHsoaXbdrCfzlHuluEG5WfqPbwgL2SbFwoXoEsZWJ5DGg/52iZo8nIzn0MnZVjyAHRwcmvOJGBGV9ki3kVkle9e0CNynllPSWNR++/KEp2kGeJUr3Ha0TwQll812jlHbRvw+ZUB790KDHY01HEfGSw0FkAtp8moxL9uR3aUwt7mjuyvaE6D4Ai+KK02gfq4O1v6PoVJwcMfEjJDoYdXORRnbi4voSuCe6lIVGxCQnohZ/Yg0ZOBXVFJAPbMS9koq46q61ClbcymgpjD65VZU/N1bbDzvOnDXkh3XZmiCOIxF0TIZEbhLOe+RJg/JJY2SDkJWz43PUKUwKe+oJh7FkG84lkQkC/W1a2d25n93zmPmxZl8qxxSoe1qKZtsub7c97i/Nh8SkWqkCwwXmylrH9zNbmDBXLwpEblfD/K5Y66eHwmEgzjIITfg/ghdhlcxR/S4mf8/MT/uFlDQzwjf8/hMYpEuxy0R5wRA5BNVPQwf+R+ziAYeqwpMTty++DdTmJqARvn2TyPYbekV11uYGn4XVK+KzRis5wISgLtouxRI2rJdqhxnqLlYaUGGnJysqLntDRDPqMi4pnRuUWNnU=
+  - secure: TA8WS5xdmyvKCN7dsyjELmTUas7aHC2KFajHbSLXTGjt2wAaEJ68aTKCGvj/ntWV1jc1FkoIhPRzFixtNQW6TXuePPly4DhJ4hvRGueIJHqIzJg/feVm9GO87HJAXq13zqFIH2yWlHR/bNR1/aaEZ0hwhNNQu/8hSudpWJ6WQMzCNw581afTCx3RU/l5Rs7MhrNncaxZBLo97csV1Y+JAyCeuk9U9YyUAKx/nYMysvfnvLf13kOpTlpsy5rF+5UJWl+DfPFjCSdvS/eRDpHhmPeCsjcjhAZgsu+Mi0EUotDN9p/Xlw7Q5D3eb0ytRGGviKAnfWud01wYh8dwl2i4XwbIeVrTITNTJd82WH2/+1HnpMovNVwfH+wrqDvraOurgSNjVe/gBHPldjaGdV8OVuSzZ5waSHtnSc+/+tOk3+xiNITwr5DZfkGIXRlr78gfYkdWJCIG35Gyyhi8G4vyI7XwI0PeuLVq2JYhYfmivNtEV/xsNg0ueJNHaXtMH9l25wW7xYm8CVgjyEJBHktJaGHnS/7wIixwWetXMofR9KXDc2InBu1HsrtAsyS9XasqVddGeA+S0uWKyVKA8atP0p74mIBX+gYUxwRCGYsogGGTenp6E8Br0oKTDWIrhjszp21lnyxxcUhWI/3iIMTCebhlLGkR45j9kAsSatu+6jA=
+
 sudo: required
 
 services:
@@ -11,3 +16,12 @@ before_install:
 script:
   - docker-compose run jekyll jekyll build
   - java -jar node_modules/vnu-jar/build/dist/vnu.jar --skip-non-html --errors-only --filterfile tests/config/vnufilter.txt build/
+
+after_success:
+  - >
+    if [ "$TRAVIS_PULL_REQUEST" == "false" -a "$TRAVIS_BRANCH" == "master" ] ;
+    then
+    export DEPLOY_CONTENT='{"TRAVIS_BUILD_NUMBER":"'$TRAVIS_BUILD_NUMBER'","TRAVIS_COMMIT":"'$TRAVIS_COMMIT'","TRAVIS_BRANCH":"'$TRAVIS_BRANCH'","TRAVIS_REPO_SLUG":"'$TRAVIS_REPO_SLUG'"}' ;
+    export DEPLOY_SIG="sha1=`echo -n "$DEPLOY_CONTENT" | openssl sha1 -hmac $DEPLOY_KEY | sed 's/^.* //'`" ;
+    curl -X POST "$DEPLOY_URL" --data "$DEPLOY_CONTENT" -H "Content-Type: application/json" -H "X-Travis-Signature: $DEPLOY_SIG" ;
+    fi
