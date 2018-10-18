@@ -9,11 +9,9 @@ services:
         - ./build:/srv/build
         - ./bundle:/usr/local/bundle
   server:
-    image: httpd
+    image: nginx:stable
     ports:
-        - "8080:8080"
+        - "8080:80"
     volumes:
-        - ./build:/usr/local/apache2/htdocs
-        - ./apache/httpd.conf:/usr/local/apache2/conf/httpd.conf
-        - ./apache/logs:/usr/local/apache2/logs
-
+        - ./build:/usr/share/nginx/html:ro
+        - ./nginx/conf.d/default.conf:/etc/nginx/conf.d/default.conf:ro
