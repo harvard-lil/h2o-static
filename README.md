@@ -6,9 +6,9 @@ Install and Run
 
 1. Install [Docker](https://docs.docker.com/installation/) or [Docker Toolbox](https://www.docker.com/products/docker-toolbox) and fire it up.
 
-2. `git clone https://github.com/harvard-lil/website-static.git`
+2. `git clone https://github.com/harvard-lil/h2o-static.git`
 
-3. `cd website-static`
+3. `cd h2o-static`
 
 4. Fire up the web server and build the site: `docker-compose up`
 
@@ -16,7 +16,7 @@ Install and Run
    -  Docker: head to http://localhost:8080/
    -  Docker Machine/Toolbox: run `docker-machine ip` to discover the IP address of your virtualbox. Then, head to http://that-ip-address:8080/
 
-6. Make changes to the app directory.
+6. Make changes to the `app` directory.
 
   Most of the time, Jekyll will notice your changes and will automatically rebuild the site: just wait for the build to finish and refresh your browser. You'll see something like the following after a successful build:
   ```
@@ -33,9 +33,9 @@ Install and Run
 
   Errors: if the build errors out (scss syntax errors, incorrect variable names, etc.), the automatic rebuilding process may stop working.
 
-  To manually rebuild the site/restart the automatic rebuilding process, press `control + c` and then run `docker-compose up` again.
+  To manually rebuild the site/restart the automatic rebuilding process, press `Ctrl`+`C` and then run `docker-compose up` again.
 
 
-7. When you are done, press `control + c` and then run `docker-compose down`. Then, optionally:
+7. When you are done, press `Ctrl`+`C` and then run `docker-compose down`. Then, optionally:
   - Docker: quit the Docker app
   - Docker Machine/Toolbox: run `docker-machine stop`
