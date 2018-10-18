@@ -20,4 +20,4 @@ If you have an active draft version of the casebook, you can get to it via your 
 
 ![Screenshot of dashboard showing draft and published version of casebook](/assets/images/dashboard-draft-published-casebook.png)
 
-Questions? Reach out to us at [mailto:h2o@cyber.law.harvard.edu](mailto:h2o@cyber.law.harvard.edu)!
+Questions? Reach out to us at [h2o@cyber.law.harvard.edu](mailto:h2o@cyber.law.harvard.edu)!
