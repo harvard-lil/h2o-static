@@ -7,6 +7,7 @@ services:
     volumes:
         - ./app:/srv/jekyll
         - ./build:/srv/build
+        - ./bundle:/usr/local/bundle
   server:
     image: httpd
     ports:

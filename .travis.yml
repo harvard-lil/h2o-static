@@ -5,13 +5,17 @@ env:
 
 sudo: required
 
+cache:
+  directories:
+    - bundle
+
 services:
   - docker
 
 before_install:
   - npm install vnu-jar
-  - sudo mkdir build
-  - sudo chmod 777 build
+  - sudo mkdir -m 777 build
+  - [ -d bundle ] || sudo mkdir -m 777 bundle
 
 script:
   - docker-compose run jekyll jekyll build
