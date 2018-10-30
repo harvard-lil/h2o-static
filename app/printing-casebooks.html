@@ -35,7 +35,7 @@ custom-scripts: ['jquery-3.1.1.min.js', 'home.js']
     <p>H2O allows anyone to download content as a formatted Word file, which can be modified, re-styled and printed from Word. </p>
 
     <h2 id="exporting">Exporting Content</h2>
-    <p>You can export and print a full casebook, specific casebook sections or individual resources (such as a case). Just click the Export button to the right of the content you want to download and print. </p>
+    <p>You can export and print a full casebook, specific casebook sections or individual resources (such as a case). Just click the Export button to the right of the content you want to download and print, and select whether or not you would like to export with annotations included. </p>
     <figure>
         <img src="{{ site.baseurl }}/assets/images/export.png" alt="A screenshot of a casebook's contents page with the Export button highlighted.">
     </figure>
@@ -49,7 +49,7 @@ custom-scripts: ['jquery-3.1.1.min.js', 'home.js']
     </figure>
     <p>If you want to include the external content in the print version of the casebook, you can add it directly to the Word file or you can create a text resource in the casebook within H2O, and then paste in the given content. As always, please make sure any use like this is permitted by applicable copyright and license requirements.</p>
     <h3 id="annotations">Annotations</h3>
-    <p>Annotations in the online version of the casebook will carry over to the Word file, although those annotations will not be interactive. For example, text that you've hidden in H2O using an elision will not be present or accessible in the Word file; instead, the Word file will display an ellipsis in the position of the hidden text.</p>
+    <p>If you’ve chosen to export with annotations included, annotations in the online version of the casebook will carry over to the Word file, although those annotations will not be interactive. For example, text that you've hidden in H2O using an elision will not be present or accessible in the Word file; instead, the Word file will display an ellipsis in the position of the hidden text.</p>
     <figure>
         <img src="{{ site.baseurl }}/assets/images/export-annotation.png" alt="A screenshot of a casebook's contents page with the Export button highlighted.">
     </figure>
@@ -61,10 +61,10 @@ custom-scripts: ['jquery-3.1.1.min.js', 'home.js']
 
     <h2 id="working-in-word">Working in Word</h2>
     <h3 id="word-styles">Default Word Styles</h3>
-    <p>The exported Word file comes with pre-assigned styles using a default style template. This makes it easier for you to customize styling in Word, such as by global changing headings, fonts, text-size and other characteristics of the text. Currently H2O offers only the default template.</p>
+    <p>The exported Word file comes with pre-assigned styles, such as 'resource title' and 'case text,' using a default style template. This makes it easier for you to customize styling in Word, by making global changes to fonts, text-size and other characteristics of the text. Currently H2O offers only the default template.</p>
 
     <h3 id="tables-of-contents" class="toc-level-2">Tables of Contents</h3>
-    <p>H2O automatically generates a table of contents for exported content. Currently, you need to insert page numbers into the document and then refresh the table of contents for page numbering to appear in the table of contents.</p>
+    <p>H2O automatically generates a table of contents (ToC) for exported content. To add pages numbers to the ToC, right-click on it and select "Update Field." If you make changes to the document that affect item locations, you can repeat this process to re-generate accurate page numbers. Currently a table of contents is only generated when exporting a casebook, not an individual section.</p>
 
 
 
