@@ -229,6 +229,11 @@ main {
   background-color: $color-white;
   padding-bottom: 40px;
 }
+.static {
+  padding-left: 10px;
+  grid-column: 1 / 3;
+}
+
 
 .docs-container {
   width: 100%;
@@ -550,66 +555,6 @@ header.blog-header {
   }
 
 }
-
-//.post-index-container {
-//  width: 90%;
-//  max-width: 1072px;
-//  margin-left: auto;
-//  margin-right: auto;
-//
-//  .post-index-item-wrapper {
-//
-//    .post-index-item {
-//      margin: 20px 0;
-//
-//      .post-index-item-title {
-//        margin: 0;
-//      }
-//
-//      .post-index-item-date {
-//
-//      }
-//
-//      .post-index-item-author {
-//        margin: 0;
-//
-//      }
-//
-//      .post-index-item-content {
-//        h1, h2, h3, h4 {
-//          color: $color-black;
-//        }
-//
-//        h1 {
-//          font-size: $size-xlarge;
-//          margin-bottom: 10px;
-//        }
-//
-//        h2 {
-//          font-size: $size-large;
-//        }
-//
-//        h3 {
-//          font-size: $size-body;
-//        }
-//
-//        a {
-//          color: $color-blue;
-//          &:hover {
-//            color: $color-red;
-//          }
-//        }
-//      }
-//
-//      .post-index-item-footer {
-//        .article-footer {
-//          margin: 0;
-//          padding: 0;
-//        }
-//      }
-//    }
-//  }
-//}
 
 .post-index-container {
   .pagination {
