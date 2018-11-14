@@ -1,0 +1,2 @@
+.*allowfullscreen.*
+.*frameborder.*
