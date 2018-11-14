@@ -15,7 +15,9 @@ pagination:
             <h1 class="post-title"><a href="{{ post.url}} ">{{ post.title }}</a></h1>
             {% if post.author %}
                 {% assign person_record = site.data.people[post.author] %}
-                <div class="post-author">Posted by {{ person_record.name }}</div>
+                <div class="post-author">By <a href="https://lil.law.harvard.edu/about/#{{ person_record.name | slugify }}">{{ person_record.name }}</a></div>
+            {% elsif post.guest-author %}
+                <p class="post-author">Posted by {{post.guest-author}}</p>
             {% endif %}
         </div>
         <div class="post-content">{{ post.content }}</div>

@@ -12,7 +12,9 @@ layout: blog-page
             <h1 class="post-title">{{ page.title }}</h1>
             {% if page.author %}
                 {% assign person_record = site.data.people[page.author] %}
-                <div class="post-author">By {{ person_record.name }}</div>
+                <div class="post-author">By <a href="https://lil.law.harvard.edu/about/#{{ person_record.name | slugify }}">{{ person_record.name }}</a></div>
+            {% elsif page.guest-author %}
+                <p class="post-author">Posted by {{page.guest-author}}</p>
             {% endif %}
         </div>
         <div class="post-content" itemprop="articleBody">

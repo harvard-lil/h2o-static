@@ -582,6 +582,10 @@ header.blog-header {
 
     .post-author {
       font-weight: 300;
+
+      a {
+        text-decoration: underline;
+      }
     }
   }
 
