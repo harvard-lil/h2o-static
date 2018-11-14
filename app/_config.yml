@@ -61,30 +61,15 @@ blog_feed_title: The Open Casebook Blog
 #  - projects_retired
 
 # Defaults
-#defaults:
-#  - scope:
-#      path: ""
-#      type: projects_active
-#    values:
-#      layout: project
-#      type: project
-#  - scope:
-#      path: ""
-#      type: sketches_active
-#    values:
-#      layout: project
-#      type: sketch
-#  - scope:
-#      path: ""
-#      type: posts
-#    values:
-#      layout: post
-#      type: post
-#      permalink: blog/:year/:month/:day/:title/
-#  - scope:
-#      path: ""
-#    values:
-#      custom-footer: false
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+      type: post
+      permalink: blog/:year/:month/:day/:title/
+
 
 ############################################################
 # Site configuration for the Jekyll 3 Pagination Gem
