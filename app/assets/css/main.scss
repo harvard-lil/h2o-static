@@ -312,6 +312,8 @@ main {
 
       .docs-text {
 
+        padding-top: 30px;
+
         h2 {
           font-size: $size-large;
         }
@@ -480,7 +482,6 @@ main {
         }
         .docs-text {
           padding-left: 40px;
-          padding-top: 0px;
           border-left: 2px solid $color-gray;
 
           h2:first-child {
@@ -582,10 +583,6 @@ header.blog-header {
 
     .post-author {
       font-weight: 300;
-
-      a {
-        text-decoration: underline;
-      }
     }
   }
 
@@ -788,6 +785,8 @@ body > footer {
 
   .docs-text {
 
+    padding-left: 10px;
+
     .term {
       color: $color-blue;
     }
@@ -796,6 +795,12 @@ body > footer {
       font-size: $size-body;
     }
   }
+}
+
+// other resources page
+
+ul.videos-list {
+  padding-left: 0px;
 }
 
 
