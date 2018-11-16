@@ -4,7 +4,7 @@ layout: blog-page
 ---
 
 <div class="post-container">
-      <article class="post" role="article" itemscope itemtype="http://schema.org/BlogPosting">
+      <article class="post">
         <div class="post-header">
             <time class="post-date" datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %-d, %Y" }}</time>
             <h1 class="post-title">{{ page.title }}</h1>
@@ -15,7 +15,7 @@ layout: blog-page
                 <p class="post-author">Posted by {{page.guest-author}}</p>
             {% endif %}
         </div>
-        <div class="post-content" itemprop="articleBody">
+        <div class="post-content" >
             {{ content }}
         </div>
           {% if tags %}

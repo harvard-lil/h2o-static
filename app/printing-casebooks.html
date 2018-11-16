@@ -10,8 +10,8 @@ sharing-image: images/h2o-logo.svg
 
 ---
 
-<nav class="left-nav" aria-labelledby="the-heading">
-    <h1 id="the-heading" class="sr-only">Page Contents</h1>
+<nav class="left-nav" aria-labelledby="page-title">
+    <h1 class="docs-title" id="page-title">{{ page.title }}</h1>
     <ul class="toc-level-1">
         <li ><a href="#exporting" class="toc-1">Exporting Content</a></li>
         <li>
@@ -40,7 +40,6 @@ sharing-image: images/h2o-logo.svg
         <img src="{{ site.baseurl }}/assets/images/export.png" alt="A screenshot of a casebook's contents page with the Export button highlighted.">
     </figure>
     <p>When you click the button, H2O will download a Microsoft Word file with whatever you chose to export. The download may take several seconds if you're exporting a big casebook.</p>
-    <h3 id="note-about-annotations" class="toc-level-2"></h3>
 
     <h3 id="links">Links</h3>
     <p>Because links point to content hosted outside of H2O, your export file will not contain the content of the linked page. Instead, only the URL of the linked page will appear in the exported file:</p>
@@ -54,19 +53,11 @@ sharing-image: images/h2o-logo.svg
         <img src="{{ site.baseurl }}/assets/images/export-annotation.png" alt="A screenshot of a casebook's contents page with the Export button highlighted.">
     </figure>
 
-
-
-
-
-
     <h2 id="working-in-word">Working in Word</h2>
     <h3 id="word-styles">Default Word Styles</h3>
     <p>The exported Word file comes with pre-assigned styles, such as 'resource title' and 'case text,' using a default style template. This makes it easier for you to customize styling in Word, by making global changes to fonts, text-size and other characteristics of the text. Currently H2O offers only the default template.</p>
 
     <h3 id="tables-of-contents" class="toc-level-2">Tables of Contents</h3>
     <p>H2O automatically generates a table of contents (ToC) for exported content. To add pages numbers to the ToC, right-click on it and select "Update Field." If you make changes to the document that affect item locations, you can repeat this process to re-generate accurate page numbers. Currently a table of contents is only generated when exporting a casebook, not an individual section.</p>
-
-
-
 
 </main>

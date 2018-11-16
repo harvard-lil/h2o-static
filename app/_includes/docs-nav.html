@@ -2,7 +2,7 @@
 {% assign nav-pages = site.pages | where: "label","nav" | sort: "nav-order" %}
 
 <div class="docs-nav-wrapper">
-    <nav class="docs-nav">
+    <nav class="docs-nav" aria-label="main">
         {% for nav-page in nav-pages %}
             {% if page.url == nav-page.url %}
                 <a class="docs-nav-item" aria-current="page" href="{{ site.baseurl }}{{ nav-page.url }}">{{ nav-page.title }}</a>
