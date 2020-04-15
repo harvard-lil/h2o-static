@@ -1,0 +1,13 @@
+---
+layout: default
+---
+
+<body class="{{ page.type }} {{ page.slug }}">
+   {% include header.html %}
+   <div class="docs-container">
+      {% include docs-content-no-sidebar.html %}
+   </div>
+   {% include footer.html %}
+   <script src="{{ site.baseurl }}/assets/javascripts/main.js"></script>
+   {% include custom-scripts.html %}
+</body>
