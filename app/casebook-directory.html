@@ -1,0 +1,43 @@
+---
+layout: normal-page
+title: Casebook Directory
+title-tag: H2O - Open Casebooks
+description: "H2O is a free platform for creating open casebooks."
+slug: casebook-directory
+---
+
+{% assign casebooks_by_title = site.data.casebook_directory | sort: "title" %}
+
+
+<main class="docs-text">
+    <h2>Free and Open Legal Ed Resources</h2>
+    <p>Many law faculty see the benefits, for themselves and their students, in publishing free and open legal educational resources. Below is a directory of free, and in some cases open, educational resources made available by their authors for the legal community. This directory includes materials self-published by their authors, as well as casebooks created in affiliation with H2O, CALI and Semaphore Press.</p>
+    <p>If you know about other resources we should add to this directory, please let us know about them through <a href="https://forms.gle/odXVwPCnu5NxbLA19">this form</a>.</p>
+
+    <table class="directory">
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Subject</th>
+                <th>Author(s)</th>
+                <th>License</th>
+                <th>Publisher</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for casebook in casebooks_by_title %}
+            <tr>
+                <td><a href="{{ casebook.link }}" target="_blank">{{ casebook.title }}</a></td>
+                <td>{{ casebook.subject }}</td>
+                <td>{{ casebook.author1 }} {% if casebook.author2 or casebook.author3 or casebook.author4 or casebook.author5 %}, et al. {% endif %}</td>
+                <td>{{ casebook.license }}</td>
+                <td>{{ casebook.publisher }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</main>
+
+
+
+
