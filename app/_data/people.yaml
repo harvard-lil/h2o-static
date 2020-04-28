@@ -46,6 +46,19 @@ jack-cushman:
   image: jack-cushman.jpg
   affiliated: true
 
+kelly-fitzpatrick:
+  name: Kelly Fitzpatrick
+  sort_name: Fitzpatrick
+  role: Research Associate
+  bio: >
+    Kelly is an open access and digital collections specialist with an affinity for coffee, hedgehogs, and glam rock.
+  email: lfitzpatrick@cyber.harvard.edu
+  website: http://lkfitz.tumblr.com/
+  twitter_account_name: fitzbub
+  github_account_name: lkfitz
+  image: kelly-fitzpatrick.jpg
+  affiliated: true
+
 casey-gruppioni:
   name: Casey Gruppioni
   sort_name: Gruppioni
