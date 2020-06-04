@@ -2,7 +2,7 @@
 layout: post
 author: adam-ziegler
 date: 2020-05-05 15:30:43+00:00
-title: "Cloning Sections and Resource in Open Casebooks on H2O"
+title: "Cloning Sections and Resources in Open Casebooks on H2O"
 ---
 
 One of the fundamental principles of H2O, and open educational resources in general, is that authors can freely share, copy and adapt the work of others, with appropriate attribution. Since its beginning, H2O has embodied this principle through features that allow cloning and adaptation of casebooks.
