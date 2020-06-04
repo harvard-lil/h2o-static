@@ -624,6 +624,9 @@ header.blog-header {
 
     .post-title {
       margin: 0;
+      a {
+        border-bottom: none;
+      }
     }
 
     .post-date {
