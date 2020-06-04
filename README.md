@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/harvard-lil/h2o-static.png?branch=master)](https://travis-ci.org/harvard-lil/h2o-static) 
+[![Build Status](https://travis-ci.org/harvard-lil/h2o-static.png?branch=master)](https://travis-ci.org/harvard-lil/h2o-static)
 
 
 Install and Run
@@ -13,8 +13,8 @@ Install and Run
 4. Fire up the web server and build the site: `docker-compose up`
 
 5. Check out what you built:
-   -  Docker: head to http://localhost:8080/
-   -  Docker Machine/Toolbox: run `docker-machine ip` to discover the IP address of your virtualbox. Then, head to http://that-ip-address:8080/
+   -  Docker: head to http://localhost/
+   -  Docker Machine/Toolbox: run `docker-machine ip` to discover the IP address of your virtualbox. Then, head to http://that-ip-address/
 
 6. Make changes to the `app` directory.
 
