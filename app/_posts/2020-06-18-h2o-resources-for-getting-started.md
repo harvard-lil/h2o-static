@@ -1,4 +1,9 @@
-H2O Resources for Getting Started
+---
+layout: post
+title: "H2O Resources for Getting Started"
+author: kelly-fitzpatrick
+date: 2020-06-18
+---
 ---
 
 We’re sharing resources to help you create open casebooks with H2O. 
