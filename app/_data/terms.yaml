@@ -57,7 +57,7 @@ replacement-text:
 
 clone:
   name: clone
-  definition: An action that an author can take to create a draft copy of any published casebook, which the author then can customize and publish (make public).
+  definition: An action that an author can take to create a draft copy of any published casebook or casebook section, which the author then can customize and publish (make public).
   include: true
 
 export:
@@ -90,5 +90,8 @@ section:
   definition: A part of a casebook.
   include: true
 
-
+collaborator:
+  name: collaborator
+  definition: A person who may edit and contribute to your casebook. 
+  include: true
 
