@@ -333,7 +333,18 @@ main {
           border: 2px solid $color-gray;
 
         }
+        table {
+            border: 2px solid black;
 
+            th {
+                background-color: $color-gray;
+                text-align:center;
+            }
+            th,td {
+                border: 2px solid black;
+                padding: 8px;
+            }
+        }
       }
     }
 

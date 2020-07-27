@@ -31,6 +31,7 @@ sharing-image: images/h2o-logo.svg
         </li>
 
         <li><a href="#titles">Titles</a></li>
+        <li><a href="#quick-add">Quick Add</a></li>        
         <li><a href="#sections">Sections</a></li>
         <li ><a href="#resources">Resources</a></li>
         <li>
@@ -128,6 +129,88 @@ sharing-image: images/h2o-logo.svg
     <figure>
         <img src="{{ site.baseurl }}/assets/images/adding-titles.png" alt="A screenshot of a casebook contents page, showing the title, subtitle and headnotes form.">
     </figure>
+
+    <h2 id="quick-add">Quick Add</h2>
+
+    The Quick Add tool is a powerful, multi-purpose form that lets you quickly add many different types of content in a variety of ways. It's located at the bottom of the table of contents for your casebook.
+    <figure>
+        <img src="{{ site.baseurl }}/assets/images/quickadd-screenshot.png" alt="A screenshot of a casebook contents page, showing the quick add form below an empty table of contents.">
+    </figure>
+
+    Using Quick Add, you can add sections, cases, links and texts to your casebook. You can also clone casebooks, or parts of other casebooks on opencasebook.org:
+
+    <br />
+
+    <table id="quickadd-reference">
+        <tr>
+            <th>Adding Multiple Items at Once</th>
+            <th>Adding Single Items</th>
+        </tr>
+        <tr>
+            <td>
+                <p>
+                    Start by pasting into the form an outline, syllabus or list copied from Word, Google Docs or some other source (PDFs not so much).
+                </p>
+                <p>
+                    H2O will try to recognize the pasted items and automatically convert them into casebook sections, cases and links.
+                </p>
+            </td>
+            <td>
+                <p>
+                    Start by pasting or typing the title of your entry. If it’s a case, type the case name or citation. Or type the URL for the link.
+                </p>
+                <p>
+                    H2O will try to recognize the item you want to add and automatically select the correct type before adding it to the casebook.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <th>
+                Adding Items Directly from H2O
+            </th>
+            <th>
+                Adding Cases Directly from CAP
+            </th>
+        </tr>
+        <tr>
+            <td>
+                <p>
+                    To add other casebooks, or parts of other casebooks, to your own, grab the URL for the part you want to add, and paste it into the Quick Add form.
+                </p>
+
+                <p>
+                    H2O will automatically “clone” the content for you and add it to your casebook.
+                </p>
+            </td>
+            <td>
+                <p>
+                    To add cases directly from the Caselaw Access Project (CAP), grab the URL for the case from https://cite.case.law and paste it into the Quick Add form.
+                </p>
+                <p>
+                    H2O will automatically ingest the case from CAP and add it to your casebook.
+                </p>
+            </td>
+        </tr>
+    </table>
+    <br />
+    <h3 id="finalize-entries">Finalize your entries</h3>
+    <p>
+        H2O will automatically add your entries at the bottom of your draft casebook. You should review them and make any edits. H2O will use a red outline to highlight entries it needs a little help completing, and you can quickly access these using the “Finalize Entries” button.
+    </p>
+
+    <figure>
+        <img src="{{ site.baseurl }}/assets/images/finalize-entries-screenshot.png" alt="A screenshot of a casebook contents page, showing the finalize entries button in the top right">
+    </figure>
+    <br />
+
+    <p>
+        For any item, you can use the drop-down menu to switch type - such as from “case” to “text” or from “text” to “section.” You also can drag-and-drop to move items within the casebook. And you can click on an item to edit its title or content.
+    </p>
+
+    <p>
+        For cases, if H2O is unable to match the given citation or case name, you’ll need to click “Specify Case” and then use the search tool to select the case you want. If you don’t see your case in the search results, you can also search by citation, or if you’ve already found the case on CAP, you can paste a link to it in the search field. If you still don’t see your case, we likely don’t have it in our database. You’ll need to mark the entry as a “text” and then add it manually.
+    </p>
+
 
     <h2 id="sections">Sections</h2>
 
@@ -272,6 +355,7 @@ sharing-image: images/h2o-logo.svg
     <figure>
         <img src="{{ site.baseurl }}/assets/images/publish-casebook.png" alt="A screenshot of a draft casebook's contents page showing the Publish button on the right side of the page.">
     </figure>
+    <p>If H2O needs a little more information before it can publish your casebook, the Publish button will instead be a Finalize entries button, <a href="#finalize-entries"> detailed above.</a></p>
     <p>Once a casebook is published, it's freely accessible to everyone online, and it can be copied, modified and adapted by any accountholders. In addition, if you're a verified author, your published casebook will appear in search results on H2O.</p>
     <p>You also can "unpublish" a casebook. Go to the casebook and click the "Settings" tab, and then click the "Unpublish" button to remove it from public view. It then will be available on your dashboard as a private, editable casebook that you can later publish again if you wish.</p>
     <figure>
