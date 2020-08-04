@@ -1,10 +1,11 @@
 ---
 title: Introducing H2O Quick Add
 author: kelly-fitzpatrick
+date: 2020-08-04
 ---
 H2O quick add is a new way to create your casebooks and syllabi more quickly and easily.
 
-Quick add lets you start your next casebook in H2O by importing a table of contents from the resources you have in Word or PDF. When you create a new resource in H2O, from casebooks to reading lists and syllabi, the quick add feature makes it faster and easier to share cases and more. Here’s how it works!
+Quick add lets you start your next casebook in H2O by importing a table of contents from the resources you have in Word. When you create a new resource in H2O, from casebooks to reading lists and syllabi, the quick add feature makes it faster and easier to share cases and more. Here’s how it works!
 
 Find your syllabus or table of contents, select and copy your text.  Here’s one example from a course in constitutional law:
 
