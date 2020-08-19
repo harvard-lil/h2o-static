@@ -193,3 +193,11 @@ suzanne-wones:
   role: former Executive Director, Harvard Law School Library
   twitter_account_name: onlywones
   affiliated: false
+
+brennan-chesley:
+  name: Brennan Chesley
+  sort_name: Chesley
+  role: Developer
+  email: bchesley@law.harvard.edu
+  github_account_name: holtchesley
+  affiliated: true
