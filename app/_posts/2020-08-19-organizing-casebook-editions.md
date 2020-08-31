@@ -18,4 +18,4 @@ H2O has introduced two new ways to help your students discover your published ca
 
 If you've co-authored multiple editions of a casebook, only one author will need to group the editions together for all of the authors to see the benefits. 
 
-We hope these tools help your students find the right casebooks right away. If you have any suggestions for how we can improve discovery <a mailto:"info@opencasebook.org">We'd love to hear them</a>.
+We hope these tools help your students find the right casebooks right away. If you have any suggestions for how we can improve discovery <a href="mailto:info@opencasebook.org">We'd love to hear them</a>.
