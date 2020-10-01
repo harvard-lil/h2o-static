@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/harvard-lil/h2o-static.png?branch=master)](https://travis-ci.org/harvard-lil/h2o-static)
+[![Build Status](https://circleci.com/gh/harvard-lil/h2o-static.svg?style=svg)](https://circleci.com/gh/harvard-lil/h2o-static)
 
 
 Install and Run
