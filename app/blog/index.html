@@ -19,7 +19,7 @@ pagination:
                 <p class="post-author">Posted by {{post.guest-author}}</p>
             {% endif %}
         </div>
-        <div class="post-content">{{ post.content }}</div>
+        <div class="post-content">{{ post.excerpt }}</div>
         {% if post.tags.length > 0 %}
         <div class="post-footer">
           {% include tags.html tags=post.tags categories=post.categories %}
