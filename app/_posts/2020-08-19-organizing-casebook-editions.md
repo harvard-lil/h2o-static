@@ -2,6 +2,7 @@
 title: Organizing Casebooks by Title
 author: brennan-chesley
 date: 2020-08-25
+excerpt_separator: <!--more-->
 ---
 
 H2O has introduced two new ways to help your students discover your published casebooks:
@@ -9,6 +10,8 @@ H2O has introduced two new ways to help your students discover your published ca
 ### You can now set up an author url
 
 [Your profile page](https://opencasebook.org/accounts/edit/) now has an option to add a public url. Your students can visit that link to quickly find the casebook for their current class and get interested in other classes they might like to take in the future. 
+
+<!--more-->
 
 ### Multiple editions of a casebook can be grouped together
 

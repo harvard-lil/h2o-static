@@ -7,8 +7,14 @@ pagination:
 
 ---
 <div class="post-index-container">
+    <!--Mailchimp Newsletter Signup Form -->
+    <div id="mc_embed_signup">
+        <p>Want to stay informed about new resources and features? <a href="https://opencasebook.us1.list-manage.com/subscribe/post?u=894c9c0d9d7d7c5f8de8d76aa&id=89f2a23e12">Subscribe to our monthly newsletter.</a></p>
+    </div>
+    <!--End Mailchimp embedded signup form-->
+    
 {% for post in paginator.posts %}
-    <article class="post">
+    <article class="post-index-post">
         <div class="post-header">
             <time class="post-date" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %-d, %Y" }}</time>
             <h1 class="post-title"><a href="{{ post.url}} ">{{ post.title }}</a></h1>
@@ -19,7 +25,8 @@ pagination:
                 <p class="post-author">Posted by {{post.guest-author}}</p>
             {% endif %}
         </div>
-        <div class="post-content">{{ post.content }}</div>
+        <div class="post-content">{{ post.excerpt }}</div>
+        <a class="read-more" href="{{ post.url }}">Read more ...</a>
         {% if post.tags.length > 0 %}
         <div class="post-footer">
           {% include tags.html tags=post.tags categories=post.categories %}
