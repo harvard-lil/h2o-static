@@ -870,12 +870,64 @@ ul.videos-list {
 
 // MC Signup Form
 
-#mc_signup {
+#mc_embed_signup {
     background: #f5f4ec;
-    margin-bottom: 20px;
-    padding: 20px;
+    margin: 20px 0;
+    padding: 5px 20px;
 
+    .form-group {
+        margin-bottom: 15px;
 
+        label {
+            display: inline-block;
+            max-width: 100%;
+            font-weight: 700;
+        }
+
+        .form-control {
+            width: 100%;
+            height: 52px;
+            font-size: 18px;
+            padding: 12px 12px;
+            display: block;
+            line-height: 1.428571429;
+            color: #333;
+            background-color: #fff;
+            border: 1px solid #2a2a2a;
+            box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+            transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+
+            &:focus {
+                border-color: #66afe9;
+                outline: 0;
+                box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(102,175,233,.6);
+            }
+        }
+    }
+
+    input.button {
+        background-color: #3e72d8;
+        cursor: pointer;
+        color: #fff;
+        border-color: #ccc;
+        line-height: 16px;
+        margin: 20px 0px;
+        padding: 14px 18px 12px;
+        border: 2px solid #3e72d8;
+        box-shadow: none;
+        font-weight: 700;
+        margin-right: 5px;
+        font-size: 14px;
+        font-fmaily: sans-serif;
+
+        &:hover, &:focus {
+            background-color: #2659bd;
+            border-color: #adadad;
+            outline-offset: -2px;
+        }
+    }
 }
+
+
 
 
