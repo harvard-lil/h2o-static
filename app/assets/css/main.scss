@@ -641,7 +641,7 @@ header.blog-header {
     }
 
     .post-date {
-      font-weight: 500;
+      font-weight: 700;
     }
 
     .post-author {
@@ -688,6 +688,13 @@ header.blog-header {
 .post-container {
   display: grid;
   grid-template-areas: "post-header" "post-content" "post-footer";
+}
+
+.post-index-post {
+    margin-bottom: 40px;
+    a.read-more {
+        @include link-none($color-dark-gray);
+    }
 }
 
 
