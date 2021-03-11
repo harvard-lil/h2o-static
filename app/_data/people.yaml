@@ -201,3 +201,10 @@ brennan-chesley:
   email: bchesley@law.harvard.edu
   github_account_name: holtchesley
   affiliated: true
+  
+catherine-brobston:
+  name: Catherine Brobston
+  sort_name: Brobston
+  role: Outreach & Support
+  email: cbrobston@law.harvard.edu
+  affiliated: true
