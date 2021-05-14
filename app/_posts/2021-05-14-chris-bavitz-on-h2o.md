@@ -7,7 +7,7 @@ excerpt_separator: <!--more-->
 
 <i>[Chris Bavitz](https://hls.harvard.edu/faculty/directory/10055/Bavitz) is the WilmerHale Clinical Professor of Law at Harvard Law School. He is also Managing Director of HLS’s Cyberlaw Clinic, based at the Berkman Klein Center for Internet & Society. And, he is a Faculty Co-Director of the Berkman Klein Center. Chris teaches the Counseling and Legal Strategy in the Digital Age and Music & Digital Media seminars, and he concentrates his practice activities on intellectual property and media law (particularly in the areas of music, entertainment, and technology). We recently talked about how he approaches the evolution of his course material after a decade of teaching with H2O.</i>
 
-### Briefly, what courses are you currently teaching or preparing to teach?
+### What courses are you currently teaching or preparing to teach?
 
 I work with the team at the Cyberlaw Clinic at Harvard Law School and co-teach the Cyberlaw Clinic Seminar with my colleague, Jess Fjeld. I also teach a couple of other non-clinical courses including one that I’ve taught with H2O for over a decade — a class called Music and Digital Media. 
  
@@ -41,4 +41,4 @@ There’s a norm that I really like in the academic world of being very open abo
 
 Over time, H2O has become much more user friendly. In the early days it was a clunkier tool that a lot of us had a lot of affection for. But, it really did take time to get it to do what you wanted it to do. Every year, though, it gets faster and better and easier to use. It works particularly well when you’re incorporating primary legal sources directly into the platform, so things like cases, statutes, legislation, and Creative Commons-licensed articles and other materials. Across the board, it’s been getting better and better over the years; if I was starting a new course today, I think it would be an even more logical choice to build the course on H2O.
 
-View [Professor Bavitz's casebook](https://opencasebook.org/casebooks/2426/) in H2O. 
+View [Professor Bavitz's casebook](https://opencasebook.org/casebooks/2426/) in H2O.
