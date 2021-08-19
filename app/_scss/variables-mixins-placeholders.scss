@@ -159,6 +159,7 @@ $color-acidmint: #18F1C0;
 @mixin heading-primary {
   @include hed-common;
   font-size: $size-large;
+  line-height: 1.2;
   margin: $grid auto;
   font-weight: 700;
   color: $color-red;
