@@ -15,33 +15,30 @@ With these new multimedia options in H2O, authors are able to use the text edito
 
 Complementing this change, we have adapted our "Text" resources to be called "Custom Content". These resources now feature a responsive tag that will adapt based on the type of content authors include. For example, a resource that only includes text will be tagged as such in the main casebook view. 
 
-<p style="text-align:center;"><img src="/assets/images/Questions-to-consider-text.png" alt="add image button" width="700" height="80"></p>
+<p style="text-align:center;"><img src="/assets/images/Questions-to-consider-text.png" alt="add image button" width="700" height="75"></p>
 
 A resource that includes video or images will instead be tagged as multimedia. 
 
-<p style="text-align:center;"><img src="/assets/images/Video-overview-multimedia.png" alt="add image button" width="700" height="80"></p>
+<p style="text-align:center;"><img src="/assets/images/Video-overview-multimedia.png" alt="add image button" width="700" height="75"></p>
 
 Authors can use these tools within any text editor in their books. Follow the steps below to get started, and please be in touch with us at info@opencasebook.org with questions or comments. 
 
 ### Adding Images:
 
-<ol>
-<li>Navigate to the “Edit” tab of an existing resource, or create a new Custom Content resource.</li> 
-<li>Click into the text editor where you want to add an image, and then click the three dots along the formatting bar at the top. From there, click the image icon.</li>
+1. Navigate to the “Edit” tab of an existing resource, or create a new Custom Content resource. 
+2. Click into the text editor where you want to add an image, and then click the three dots along the formatting bar at the top. From there, click the image icon.
+<br>
 <img src="/assets/images/add-image.png" alt="add image button" width="600" height="110">
-<li>You will be given the option to upload your own image, or, if the image is posted online, to insert the appropriate URL.</li> 
-<li>Once you’ve selected the image you want to add, you can choose how you’d like to position it in your book using the “Class” dropdown. Click save to close the Insert/Edit Image window.</li> 
-<li>Click save along the right side of your book, and navigate to the “Preview” tab to review your work.</li>
-</ol>
-
+3. You will be given the option to upload your own image, or, if the image is posted online, to insert the appropriate URL.
+4. Once you’ve selected the image you want to add, you can choose how you’d like to position it in your book using the “Class” dropdown. Click save to close the Insert/Edit Image window. 
+5. Click save along the right side of your book, and navigate to the “Preview” tab to review your work.
 
 ### Adding Videos:
 
-<ol>
-<li>Navigate to the “Edit” tab of an existing resource, or create a new Custom Content resource.</li> 
-<li>Click into the text editor where you want to embed a video, and then click the three dots along the formatting bar at the top. From there, click the video icon.</li> 
+1. Navigate to the “Edit” tab of an existing resource, or create a new Custom Content resource. 
+2. Click into the text editor where you want to embed a video, and then click the three dots along the formatting bar at the top. From there, click the video icon.
+<br>
 <img src="/assets/images/add-video.png" alt="add video button" width="600" height="110">
-<li>You will be given the option to paste in the URL or the embed code, which you can find on the host site (YouTube or Vimeo).</li>
-<li>Click save to close the Insert/Edit Media window.</li>
-<li>Click save along the right side of your book, and navigate to the “Preview” tab to review your work.</li>
-</ol>
+3. You will be given the option to paste in the URL or the embed code, which you can find on the host site (YouTube or Vimeo).
+4. Click save to close the Insert/Edit Media window.
+5. Click save along the right side of your book, and navigate to the “Preview” tab to review your work.
