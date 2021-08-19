@@ -1,7 +1,6 @@
 ---
 title: Introducing images and video in H2O
 author: catherine-brobston
-date: 2021-08-04
 excerpt_separator: <!--more-->
 ---
 
