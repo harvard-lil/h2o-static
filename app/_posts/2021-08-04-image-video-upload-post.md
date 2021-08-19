@@ -28,7 +28,7 @@ Authors can use these tools within any text editor in their books. Follow the st
 <ol>
 <li>Navigate to the “Edit” tab of an existing resource, or create a new Custom Content resource.</li> 
 <li>Click into the text editor where you want to add an image, and then click the three dots along the formatting bar at the top. From there, click the image icon.</li>
-<p style="text-align:center;"><img src="/assets/images/add-image.png" alt="add image button" width="600" height="110"></p>
+<center><img src="/assets/images/add-image.png" alt="add image button" width="600" height="110"></center>
 <li>You will be given the option to upload your own image, or, if the image is posted online, to insert the appropriate URL.</li> 
 <li>Once you’ve selected the image you want to add, you can choose how you’d like to position it in your book using the “Class” dropdown. Click save to close the Insert/Edit Image window.</li> 
 <li>Click save along the right side of your book, and navigate to the “Preview” tab to review your work.</li>
@@ -40,7 +40,7 @@ Authors can use these tools within any text editor in their books. Follow the st
 <ol>
 <li>Navigate to the “Edit” tab of an existing resource, or create a new Custom Content resource.</li> 
 <li>Click into the text editor where you want to embed a video, and then click the three dots along the formatting bar at the top. From there, click the video icon.</li> 
-<p style="text-align:center;"><img src="/assets/images/add-video.png" alt="add video button" width="600" height="110"></p>
+<center><img src="/assets/images/add-video.png" alt="add video button" width="600" height="110"></center>
 <li>You will be given the option to paste in the URL or the embed code, which you can find on the host site (YouTube or Vimeo).</li>
 <li>Click save to close the Insert/Edit Media window.</li>
 <li>Click save along the right side of your book, and navigate to the “Preview” tab to review your work.</li>
