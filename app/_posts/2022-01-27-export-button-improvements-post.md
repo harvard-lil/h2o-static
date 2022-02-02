@@ -3,30 +3,25 @@ title: Introducing Increasingly Reliable Exports
 author: clare-stanton
 excerpt_separator: <!--more-->
 ---
-[H2O](https://opencasebook.org) is a primarily a digital platform, enriched by its ability to be flexible and pull from many online sources on the fly. However, we have learned from our users that having a physical copy of their casebooks is important and desirable for their study habits.
+[H2O](https://opencasebook.org/) is primarily a digital platform, able to pull from many online sources on the fly. However, we've learned from users who are students that having physical copies of casebooks is important for their study habits. There has long been an option to export a casebook from H2O for printing; we've recently been putting more development work into making that export as ready as possible to be printed like a bound text.
 
-As our user community grows and evolves we’ve been putting an eye towards how the digital translates into the physical. There has long been an option to export a book from H2O, which can be formatted and used to make a physical book. We’ve recently been putting more development work into making that export as ready as possible to be printed like a bound text.
-
-Over the past couple of weeks we have deployed a handful of updates that will improve the export experience for casebooks across the board. Our goal is to get to a place where authors can click Export and then Print in quick succession and end up with an object that looks and feels like a traditional book.
+Over the past few weeks, we've deployed a handful of updates that improve the export experience for casebooks across the board. Our goal is for authors to be able to click Export and then Print in quick succession, and end up with an object that looks and feels like a traditional book. Here are the highlights:
 
 <!--more-->
-
-### Here are the highlights:
 
 ### More Reliability
 Especially in the case of longer casebooks, exports are much more reliably exported as Word documents.
 
-
 ### Footnotes
-Footnotes - both from imported CAP cases and texts written by casebook authors - will be recognized by Word as footnotes instead of just styled text. This means you can use your usual footnote workflow to renumber and restyle them as you’d like.
+Footnotes - from imported CAP cases as well as those in text written by casebook authors - will be recognized by Word as footnotes, not just styled text. This means you can use your usual footnote workflow to renumber and restyle them as you'd like.
 
 ### Default Styles
-Our design team overhauled the default styling for exports. Their improvements include:
+Our design team overhauled the default styling for exports. Improvements include:
 
-1. Automatically integrating into Word’s native word styles tools to make it easier to adjust formatting across the board and maintain structure.
+1. Integration into Word's native styling, which makes it easier to adjust formatting across the board while maintaining document structure.
 
-2. More effective element contrasting when there are different types of text such as subtitles, headers, or a URL.
+2. More effective element contrast for different types of text such as subtitles, headers, and URLs.
 
-3. Dedicated pages for new chapters make the break up of content more effective.
+3. Dedicated pages for new chapters, which make chapter breaks more idiomatic and clarify the separation of content.
 
 These updates are now live on the site! Please reach out to us at [info@opencasebook.org](mailto:info@opencasebook.org) with any questions or feedback.
