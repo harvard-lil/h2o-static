@@ -1,0 +1,48 @@
+name: Tests
+
+on: [push, pull_request]
+
+jobs:
+  test:
+    runs-on: ubuntu-20.04
+    # don't run on pushes to forks
+    if: github.event_name == 'pull_request' || github.repository == 'harvard-lil/h2o-static'
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - uses: actions/cache@v3
+        with:
+          path: bundle
+          key: ${{ runner.os }}-gems-${{ hashFiles('app/Gemfile.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-gems-
+
+      - name: Info
+        run: |
+          docker-compose --version
+          docker version
+          npm --version
+
+      - name: Setup
+        run: |
+          npm install vnu-jar
+          sudo mkdir -m 777 build
+          ls bundle || sudo mkdir -m 777 bundle
+          sudo mkdir -m 777 app/.jekyll-cache
+
+      - name: Test
+        run: |
+          bash ./scripts/run-tests.sh
+
+      - name: Deploy
+        if: github.event_name == 'push' && github.ref == 'refs/heads/develop'
+        env:
+          DEPLOY_KEY: ${{ secrets.DEPLOY_KEY }}
+          DEPLOY_URL: ${{ secrets.DEPLOY_URL }}
+          DEPLOY_HEADER: ${{ secrets.DEPLOY_HEADER }}
+        run: |
+          set -x
+          export DEPLOY_CONTENT='{"GITHUB_RUN_NUMBER":"'$GITHUB_RUN_NUMBER'","GITHUB_SHA":"'$GITHUB_SHA'","GITHUB_REF":"'$GITHUB_REF'","GITHUB_REPOSITORY":"'$GITHUB_REPOSITORY'","GITHUB_ACTOR":"'$GITHUB_ACTOR'"}' ;
+          export DEPLOY_SIG="sha1=`echo -n "$DEPLOY_CONTENT" | openssl sha1 -hmac $DEPLOY_KEY | sed 's/^.* //'`" ;
+          curl -X POST "$DEPLOY_URL" --data "$DEPLOY_CONTENT" -H "Content-Type: application/json" -H "$DEPLOY_HEADER: $DEPLOY_SIG" ;
