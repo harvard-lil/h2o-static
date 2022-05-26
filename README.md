@@ -1,4 +1,4 @@
-[![Build Status](https://circleci.com/gh/harvard-lil/h2o-static.svg?style=svg)](https://circleci.com/gh/harvard-lil/h2o-static)
+[![build status](https://github.com/harvard-lil/h2o-static/actions/workflows/tests.yml/badge.svg)](https://github.com/harvard-lil/h2o-static/actions)
 
 
 Install and Run
