@@ -1,7 +1,7 @@
 .DS_Store
 .idea
 *~
-apache/logs
+nginx/logs
 app/.jekyll-metadata
 app/.jekyll-cache
 app/.sass-cache
