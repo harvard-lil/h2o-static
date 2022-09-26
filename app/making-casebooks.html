@@ -13,53 +13,65 @@ sharing-image: images/h2o-logo.svg
 <nav class="left-nav" aria-labelledby="page-title">
     <h1 class="docs-title" id="page-title">{{ page.title }}</h1>
     <ul class="toc-level-1">
-        <li ><a href="#get-started" class="toc-1">Get Started</a></li>
+        <li ><a href="#account-set-up" class="toc-1">Account Set-up</a></li>
         <li>
             <ul class="toc-level-2">
-                <li ><a href="#accounts">Sign Up</a></li>
-                <li><a href="#profiles">Your Profile</a></li>
-                <li><a href="#dashboard">Your Dashboard</a></li>
+                <li ><a href="#sign-up">Sign up</a></li>
+                <li><a href="#profiles">Your profile</a></li>
+                <li><a href="#verified-professors">Verified professors</a></li>
+                <li><a href="#dashboard">Your dashboard</a></li>
             </ul>
         </li>
 
         <li><a href="#creating-casebooks">Creating a Casebook</a></li>
         <li>
             <ul class="toc-level-2">
-                <li ><a href="#from-scratch">Building From Scratch</a></li>
-                <li ><a href="#adapting-casebooks">Adapting Existing Casebooks</a></li>
+                <li ><a href="#from-scratch">Create a new casebook</a></li>
+                <li ><a href="#adapt-casebook">Adapt an H2O casebook</a></li>
             </ul>
         </li>
 
-        <li><a href="#titles">Titles</a></li>
-        <li><a href="#quick-add">Quick Add</a></li>
-        <li><a href="#sections">Sections</a></li>
-        <li ><a href="#resources">Resources</a></li>
+        <li><a href="#describing-casebooks">Describing Casebooks</a></li>
+        <li><a href="#casebook-collaborators">Casebook Collaborators</a></li>
+        <li ><a href="#adding-content">Adding Content</a></li>
+            <ul class="toc-level-2">
+            <li><a href="#content-types">Content types</a></li>
+            <li><a href="#individual-add">Individual add</a></li>
+            <li><a href="#quick-add">Quick add</a></li>
+            <li><a href="#from-another-book">From another H2O casebook</a></li>
+        </ul>
+        <li ><a href="#annotating-content">Annotating Content</a></li>
         <li>
             <ul class="toc-level-2">
-            <li><a href="#adding-cases">Cases</a></li>
-            <li><a href="#adding-texts">Texts</a></li>
-            <li><a href="#adding-links">Links</a></li>
+            <li><a href="#elide">Elide</a></li>
+            <li><a href="#replace">Replace</a></li>
+            <li><a href="#highlight">Highlight</a></li>
+            <li><a href="#add-note">Add note</a></li>
+            <li><a href="#add-link">Add link</a></li>
+            <li><a href="#correction">Correction</a></li>
         </ul>
         </li>
-        <li><a href="#cloning-content">Cloning Content</a></li>
-        <li ><a href="#annotating-resources">Annotating Resources</a></li>
+        <li><a href="#arranging-content">Arranging Content</a></li>
         <li>
             <ul class="toc-level-2">
-            <li><a href="#elisions">Elisions</a></li>
-            <li><a href="#replacement-text">Replacing Text</a></li>
-            <li><a href="#highlights">Highlights</a></li>
-            <li><a href="#notes">Notes</a></li>
-            <li><a href="#links">Links</a></li>
-        </ul>
-        </li>
-        <li><a href="#publishing-casebooks">Publishing a Casebook</a></li>
-        <li><a href="#collaborating">Managing Collaborators</a></li>
-        <li><a href="#revising-casebooks">Revising a Casebook</a></li>
+                <li><a href="#moving-content">Moving content</a></li>
+                <li><a href="#deleting-content">Deleting content</a></li>
+            </ul>
+        </li>        
+        <li><a href="#publishing-casebooks">Publishing Casebooks</a></li>
+        <li><a href="#revising-casebooks">Revising Casebooks</a></li>
         <li>
             <ul class="toc-level-2">
-                <li><a href="#making-changes">Making Changes</a></li>
-                <li><a href="#publishing-changes">Publishing Changes</a></li>
-                <li><a href="#grouping-editions">Grouping Editions</a></li>
+                <li><a href="#making-changes">Making changes</a></li>
+                <li><a href="#publishing-changes">Publishing changes</a></li>
+            </ul>
+        </li>        
+        <li><a href="#printing-casebooks">Printing Casebooks</a></li>
+
+        <li><a href="#managing-casebooks">Managing Casebooks</a></li>
+        <li>
+            <ul class="toc-level-2">
+                <li><a href="#grouping-editions">Grouping editions</a></li>
                 <li><a href="#archiving-casebooks">Archiving</a></li>
         </ul>
         </li>
@@ -68,34 +80,39 @@ sharing-image: images/h2o-logo.svg
 
 <main class="docs-text" id="main">
 
-    <h2 id="get-started">Get Started</h2>
+ 
     <p>H2O helps law faculty make digital casebooks that are free, simple to update and easy to access and print.</p>
     <p>All of the content on H2O is free to access and covered by a <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank">CC BY-NC-SA 3.0 license</a>. </p>
 
-    <h3 id="accounts">Sign Up</h3>
-    <p>To make casebooks you'll need an account. <a href="https://opencasebook.org/accounts/new/">Sign up for free here</a>.</p>
+    <h2 id="account-set-up">Account Set-up</h2>
+    <h3 id="sign-up">Sign up</h3>
+    <p>Anybody with an internet connection can read an H2O casebook - <a href=https://opencasebook.org/search/>browse the collection here</a>.</p>
+    <p>Anybody who wants to author, remix, or take notes on a casebook will need to create an account. If your email address ends in .edu or .gov, you can create an account on our <a href="https://opencasebook.org/accounts/new/">sign up page</a>.</p>
     <p>Once you login, your account menu will appear in the upper right corner, and from there you can access your profile and dashboard or you can sign out.</p>
 
     <h3 id="profiles">Your Profile</h3>
-    <p>Complete your profile by adding your display name and your school.</p>
+    <p>Complete <a href=https://opencasebook.org/accounts/edit/> your profile</a> by adding your display name, your affiliation, and any other information you'd like to appear on your author page.</p>
+    
+    <h3 id="verified-professors">Verified Professors</h3>
+    <p>At the bottom of your profile, you can request Verified Professor status to get a green check mark next to your name and ensure that your casebooks appear in search results. Verified Professors also have access to teaching notes, image uploads and video embeds. To become a Verified Professor, check the box at the bottom of your Profile and click Save to send a request to our team. 
+    </p>
     <figure>
         <img src="{{ site.baseurl }}/assets/images/profile.png" alt="A screenshot of a user's profile page.">
     </figure>
 
-    <p>From your profile, request verified professor status to get a green check mark and ensure that your casebooks appear in search results.</p>
     <figure>
         <img src="{{ site.baseurl }}/assets/images/verified-professor.png" alt="A screenshot of the search results page, showing casebooks authored by verified professors, each of which is designated by a green check mark.">
     </figure>
 
     <h3 id="dashboard">Your Dashboard</h3>
-    <p>Your dashboard is where you'll find all the casebooks you've authored.</p>
+    <p>Your dashboard is where you'll find all the casebooks you've authored, and where you can view any books you've followed.</p>
     <figure>
         <img src="{{ site.baseurl }}/assets/images/dashboard-casebook-states.png" alt="A screenshot of a user's dashboard page.">
     </figure>
     <p>Once you've logged in, access your dashboard from the account menu in the upper right corner of the screen.</p>
 
     <h2 id="creating-casebooks">Creating a Casebook</h2>
-    <p>Click the "Create Casebook" button at the top of the page to get started.</p>
+    <p>Once you’re logged in, you’ll see a “Create Casebook” button at the top of your page.</p>
     <figure>
         <img src="{{ site.baseurl }}/assets/images/create-casebook-button.png" alt="A screenshot of the top of the page, with the Create Casebook button highlighted.">
     </figure>
@@ -104,160 +121,82 @@ sharing-image: images/h2o-logo.svg
         <img src="{{ site.baseurl }}/assets/images/create-casebook-modal.png" alt="A screenshot of the Create Casebook modal, which offers two options for making a casebook.">
     </figure>
 
-    <h3 id="from-scratch">Building from Scratch</h3>
-    <p>Building a new casebook from scratch is easy. There are many different ways to do it, but here's a method we like and recommend:</p>
+    <h3 id="from-scratch">Create a new casebook</h3>
+    <p>Building a new casebook entails adding all of your own content into H2O. There are many different ways to do it, but here's a method we like and recommend:</p>
     <ul>
-        <li>1. Add a title.</li>
+        <li>1. Add a title and a description that will be surfaced in Search.</li>
         <li>2. Add the sections and sub-sections that form the basic structure of your casebook.</li>
         <li>3. Add the resources (cases, texts, links) you want to each section.</li>
         <li>4. Annotate individual resources using elisions, highlights, links and notes.</li>
         <li>5. Publish your casebook</li>
     </ul>
-    <p>Read on <a href="https://about.opencasebook.org/making-casebooks/#titles">below</a> to learn more about each of these steps.</p>
+    <p>Skip ahead to the <a href="https://about.opencasebook.org/making-casebooks/#adding-content">Adding Content section</a> below to learn more about each of these steps.</p>
 
-    <h3 id="adapting-casebooks">Adapting Existing Casebooks</h3>
-    <p>To adapt an existing casebook, search our database of casebooks for the one you want to use as a starting point. You can search by keyword (like "Torts" or by author (like "Zittrain"). </p>
+    <h3 id="adapt-casebook">Adapt an H2O casebook</h3>
+    <p>To adapt an existing casebook, search our database of casebooks for the one you want to use as a starting point. You can search by keyword (like "Torts") or by author (like "Zittrain"). </p>
     <figure>
         <img src="{{ site.baseurl }}/assets/images/search-results.png" alt="A screenshot of the search page.">
     </figure>
-    <p>Select the casebook you want to adapt, then click the "Clone" button to create your own draft version of the casebook.</p>
+    <p>In order to “remix” or adapt a casebook, you first need a copy of it. When you find a casebook you like, make sure you’re logged in and click the “Clone” button along the right side of the book. The entire book will be copied into a draft that is now in your own Dashboard.</p>
     <figure>
         <img src="{{ site.baseurl }}/assets/images/clone-casebook.png" alt="A screenshot of a casebook contents page, with the 'Clone' button highlighted.">
     </figure>
-    <p>Once you've cloned the casebook to create your own draft version, you can make changes by adding or deleting sections or resources, and by making your own annotations.</p>
-
-    <h2 id="titles">Titles</h2>
-    <p>You can edit the title of your casebook and add a subtitle and headnotes by clicking on "Casebook" tab. Hit the Save button after making any changes to these fields.</p>
+    <p>Once you've cloned the casebook to create your own draft version, you can make changes by adding or deleting sections or resources, re-ordering the casebook, and by making your own annotations.</p>
+    <p>If you’d like to mix and match sections from a few casebooks to create your own, first, make sure you’re logged in. Then, create a working draft in your Dashboard. Finally, navigate to the sections of the casebooks you want to use, click Clone along the top right side, and select the working draft where you’d like the section to appear. Repeat this process until you’ve got all of the sections you want in your draft casebook.</p>
+    
+    <h2 id="describing-casebooks">Describing Casebooks</h2>
+    <p>Naming and describing your casebook helps students and colleagues find your work more easily. You can edit the title of your casebook, add a subtitle, and write a description at the top of your draft casebook. These fields are surfaced in search and can help other professors find open casebooks that may work in their classrooms.</p> 
+    <p>The headnote on your main casebook page is essentially your cover page - readers will see it on the landing page of your book.</p> 
+    <p>Hit the Save button after making any changes to these fields.</p>
     <figure>
         <img src="{{ site.baseurl }}/assets/images/adding-titles.png" alt="A screenshot of a casebook contents page, showing the title, subtitle and headnotes form.">
     </figure>
 
-    <h2 id="quick-add">Quick Add</h2>
+    <h2 id="casebook-collaborators">Casebook Collaborators</h2>
+    <p><i>Watch our <a href=https://about.opencasebook.org/other-resources/#adding-collaborators>video tutorial on adding collaborators</a>.</i></p>
+    <p>Possible collaborators on your casebook include support staff, librarians, other professors, and students. Once you have a draft started, add them to your book by clicking on the “Settings” tab and entering the email address of your collaborator in the field labeled “Invite a New Collaborator”. They will receive an email with a link to access your book. If your collaborator already has an H2O account, make sure you’re using the same email address they use for their account. If they do not have an account, they will be prompted to create one.</p> 
+    <p>Once you’ve added your collaborators, you can use the checkboxes to grant the appropriate attribution and editing permissions.</p>
+    <figure>
+        <img src="{{ site.baseurl }}/assets/images/invite-collaborator.png" alt="A screenshot of a published casebook's settings page showing the email field for inviting a new collaborator.">
+    </figure>
 
-    The Quick Add tool is a powerful, multi-purpose form that lets you quickly add many different types of content in a variety of ways. It's located at the bottom of the table of contents for your casebook.
+    <h2 id="adding-content">Adding Content</h2>
+    <h3 id="content-types">Content types</h3>
+    <p>Types of content you can add to an H2O casebook are below: 
+        <ul>
+        <li><b>Legal Documents</b> - H2O supplies all United States court cases through 2018, and the latest published version of the Federal U.S. Code as found on the govinfo website. You can search our database for the citation or keywords of the case or section of code you want to include. When you select the appropriate document from the search results, H2O will add it to your casebook. </li>
+        <li><b>Custom Content</b> - Text, images, and embedded videos can be added through the Custom Content section. Text resources are often introductory or explanatory notes prepared by the author to offer context about a section or case. They can also include questions, problem sets, statutory references or any other content the author adds. If you are working with cases decided since 2018 that are not yet available in our database, you can copy and paste those opinions in as text. Verified Professors can also upload images or embed videos through the text editor.</li>
+        <li><b>Teaching Notes</b> - To add teaching notes to your casebook that will help other professors use your casebook, simply add them as a Custom Content resource and check the box restricting that content to Verified Professors in H2O.</li>
+        <li><b>Links</b> - Links are resources that point to materials hosted elsewhere on the web. These can be publicly accessible websites, government reports, articles, blogposts, etc. Links can also point to restricted content for your students to access via their law school login.</li>
+        <li><b>Sections</b> - Sections and subsections help organize your casebooks by topic or week. We recommend you create these first to give yourself a working structure and then add content within each section. Note that you can move content between sections if you need to do some re-ordering once you get started.</li>
+    </ul>    
+    </p>
+
+    <h3 id="individual-add">Individual add</h3>
+    <p>Along the top right side of your book, you’ll see the “Add Section” and “Add Content” buttons. Use these to add individual items to your casebook. If you are building the structure of your book in H2O, we recommend following the steps in the order below. You can also watch our video tutorials on <a href=https://about.opencasebook.org/other-resources/#creating-sections-videoadding>addding sections</a> and <a href="https://about.opencasebook.org/other-resources/#adding-resources-video">adding resources</a> to your book. 
+        <ul>
+        <li><b>1. Add the sections and sub-sections that form the basic structure of your casebook.</b> To add a section you can click "Add Section" at the top right side of your book.</li>
+        <li><b>2. Add the resources (legal documents, text, links) you want to each section.</b> To add your resources, click "Add Resource" and select the appropriate type from the buttons along the top of the window. For Legal Documents, search for cases or code by entering a citation or key words. For Custom Content, add text right to the text box, and use the image and video buttons to add multimedia. For links, paste your link into the field and add a description or edit the title.</p></li>
+        <li><b>3. Annotate individual resources using elisions, highlights, links and notes.</b> Skip ahead to annotating content for more.</li>
+    </ul>    
+    </p>
+
+    <h3 id="quick-add">Quick add</h3>
+
+    The Quick Add tool is a powerful, multi-purpose form that lets you quickly add many different types of content in a variety of ways. It is located at the bottom of the table of contents for your casebook.
     <figure>
         <img src="{{ site.baseurl }}/assets/images/quickadd-screenshot.png" alt="A screenshot of a casebook contents page, showing the quick add form below an empty table of contents.">
     </figure>
 
-    Using Quick Add, you can add sections, cases, links and texts to your casebook. You can also clone casebooks, or parts of other casebooks on opencasebook.org:
+    <p>If you have an outline or a list of items you want to include, you can copy and paste the entire outline into the Quick Add window at the bottom of your casebook. This will ingest those items into your H2O book where you can finalize your entries, add text, and change the order.</p>
+    <p>If you prefer to build your outline within H2O, or simply want to add items one by one, you can drop single items (case citations, links, heading names) into the Quick Add window. 
+    </p>
+    <p>You can also use the Quick Add window to grab sections or resources from other H2O books, or to add cases directly from our sister project, the Caselaw Access Project. For H2O resources, simply copy and paste the URL from the resource you want to add to your book and paste it in the Quick add window. For CAP cases, copy and paste the URL of the case you’d like to include and drop it in the Quick add window.</p>
 
-    <br />
-
-    <table id="quickadd-reference">
-        <tr>
-            <th>Adding Multiple Items at Once</th>
-            <th>Adding Single Items</th>
-        </tr>
-        <tr>
-            <td>
-                <p>
-                    Start by pasting into the form an outline, syllabus or list copied from Word, Google Docs or some other source (PDFs not so much).
-                </p>
-                <p>
-                    H2O will try to recognize the pasted items and automatically convert them into casebook sections, cases and links.
-                </p>
-            </td>
-            <td>
-                <p>
-                    Start by pasting or typing the title of your entry. If it’s a case, type the case name or citation. Or type the URL for the link.
-                </p>
-                <p>
-                    H2O will try to recognize the item you want to add and automatically select the correct type before adding it to the casebook.
-                </p>
-            </td>
-        </tr>
-        <tr>
-            <th>
-                Adding Items Directly from H2O
-            </th>
-            <th>
-                Adding Cases Directly from CAP
-            </th>
-        </tr>
-        <tr>
-            <td>
-                <p>
-                    To add other casebooks, or parts of other casebooks, to your own, grab the URL for the part you want to add, and paste it into the Quick Add form.
-                </p>
-
-                <p>
-                    H2O will automatically “clone” the content for you and add it to your casebook.
-                </p>
-            </td>
-            <td>
-                <p>
-                    To add cases directly from the Caselaw Access Project (CAP), grab the URL for the case from https://cite.case.law and paste it into the Quick Add form.
-                </p>
-                <p>
-                    H2O will automatically ingest the case from CAP and add it to your casebook.
-                </p>
-            </td>
-        </tr>
-    </table>
-    <br />
-    <h3 id="finalize-entries">Finalize your entries</h3>
-    <p>
-        H2O will automatically add your entries at the bottom of your draft casebook. You should review them and make any edits. H2O will use a red outline to highlight entries it needs a little help completing, and you can quickly access these using the “Finalize Entries” button.
+    <p>Once you've added your resources via Quick Add, any item that needs further attention will be outlined in red. For cases, if H2O is unable to match the given citation or case name, you’ll need to click “Specify Case” and then use the search tool to select the case you want.
     </p>
 
-    <figure>
-        <img src="{{ site.baseurl }}/assets/images/finalize-entries-screenshot.png" alt="A screenshot of a casebook contents page, showing the finalize entries button in the top right">
-    </figure>
-    <br />
-
-    <p>
-        For any item, you can use the drop-down menu to switch type - such as from “case” to “text” or from “text” to “section.” You also can drag-and-drop to move items within the casebook. And you can click on an item to edit its title or content.
-    </p>
-
-    <p>
-        For cases, if H2O is unable to match the given citation or case name, you’ll need to click “Specify Case” and then use the search tool to select the case you want. If you don’t see your case in the search results, you can also search by citation, or if you’ve already found the case on CAP, you can paste a link to it in the search field. If you still don’t see your case, we likely don’t have it in our database. You’ll need to mark the entry as a “text” and then add it manually.
-    </p>
-
-
-    <h2 id="sections">Sections</h2>
-
-    <h3 id="new-sections">Making New Sections</h3>
-    <p>Sections form the structure of your casebook. To add a section, click the "Add Section" action button, and then fill in the section title, as well as any section subtitle or headnotes. Click "Save" when you're finished updating the title, subtitle and headnotes. The Section will initially appear at the bottom of your casebook contents, but you can move a section by clicking and holding your mouse button, then dragging and dropping it into the desired location. </p>
-    <h3 id="adapting-sections">Adapting Sections from Other Casebooks</h3>
-    <p>You also copy sections from other public casebooks and incorporate them into your casebook. </p>
-    <p><i>Check out our videos on <a href="https://about.opencasebook.org/other-resources/#creating-sections-video">making sections</a> and <a href="https://about.opencasebook.org/other-resources/#moving-items-video">moving items</a>.</i></p>
-
-    <h2 id="resources">Resources</h2>
-    <p><i>Check out our video on adding resources <a href="https://about.opencasebook.org/other-resources/#adding-resources-video">here</a>.</i></p>
-    <p>Resources form the content of your casebook. To add a resource to your casebook, click the "Add Resource" action button.</p>
-
-    <figure>
-        <img src="{{ site.baseurl }}/assets/images/add-resource-button.png" alt="A screenshot of a casebook contents page, showing the title, subtitle and headnotes form, with the add resource action button highlighted">
-    </figure>
-
-    <p>Then select the type of resource you want to add. H2O currently supports three resource types: (1) Cases; (2) Texts; and (3) Links.</p>
-
-    <figure>
-        <img src="{{ site.baseurl }}/assets/images/add-resource.png" alt="A screenshot of a casebook contents page, showing the title, subtitle and headnotes form, with the add resource form activated.">
-    </figure>
-
-    <h3 id="adding-cases">Cases</h3>
-    <p>Cases are opinions issued by courts. H2O supplies them. You can search our database for the citation of the one you want. When you click the case within the search results, H2O will add it to your casebook. If the case you want is not appearing in search results, let us know and we'll add it to the database. </p>
-
-    <figure>
-        <img src="{{ site.baseurl }}/assets/images/add-case.png" alt="A screenshot of a draft casebook, with the add resource form active, the find case tab active, and a citation entered with results showing.">
-    </figure>
-
-    <h3 id="adding-texts">Texts</h3>
-    <p>Texts are resources created by users. Often these are introductory or explanatory notes prepared by the author to offer context about a case. They also can include questions, problem sets, statutory references or any other content the author adds. To add a text, simple use the text editor form to include and style your content.</p>
-
-    <figure>
-        <img src="{{ site.baseurl }}/assets/images/add-text.png" alt="A screenshot of a draft casebook, with the add resource form active, the create text tab active, and some sample text entered.">
-    </figure>
-
-    <h3 id="adding-links">Links</h3>
-    <p>Links are resources that point to materials hosted elsewhere on the web. These can be websites, government reports, articles, blogposts, etc. </p>
-
-    <figure>
-        <img src="{{ site.baseurl }}/assets/images/add-link.png" alt="A screenshot of a draft casebook, with the add resource form active, the add link tab active, and an example URL entered.">
-    </figure>
-
-    <h2 id="cloning-content">Cloning Content</h2>
+    <h3 id="from-another-book">From another H2O casebook</h3>
     <p>H2O allows you to clone and adapt entire casebooks, but it also lets you clone and adapt individual sections, cases, texts and links. Simply visit the content you want to clone and click the "Clone" button.</p>
     <figure>
         <img src="{{ site.baseurl }}/assets/images/clone-section.png" alt="A screenshot of a section of a casebook, with the Clone Section button highlighted.">
@@ -268,12 +207,12 @@ sharing-image: images/h2o-logo.svg
     </figure>
     <p>Once you've added the cloned section or resource to your casebook, you can move it around or edit it however you like.</p>
 
-    <h2 id="annotating-resources">Annotating Resources</h2>
-    <p><i>Watch our how-to video on making annotations <a href="https://about.opencasebook.org/other-resources/#annotating-video">here</a>.</i></p>
-    <p>Once you've added a case or text resource to your casebook, you can make several different types of annotations, including eliding text, replacing text, higlighting text, adding comments to selected text and adding links to selected text. Annotations can only be added to a casebook that you have permission to edit, and is in draft mode. This part of the guide walks you through each type of annotation.</p>
+    <h2 id="annotating-content">Annotating Content</h2>
+    <p><i>Watch our video tutorial on making annotations <a href="https://about.opencasebook.org/other-resources/#annotating-video">here</a>.</i></p>
+    <p>Within H2O you can edit legal documents and texts as you like. To get started, highlight a portion of the resource to surface the annotation menu. Annotations can only be added to a casebook that you have permission to edit, and is in draft mode.</p>
 
-    <h3 id="elisions">Elisions</h3>
-    <p>Authors often want to hide text that is not essential to the casebook, such as portions of cases that discuss unrelated issues or factual or procedural background. With H2O, authors can use elisions to hide any unnecessary text. Here is an example of an elision: </p>
+    <h3 id="elide">Elide</h3>
+    <p>This is the function that allows authors to “remove” parts of a case to make it more manageable for readers. In H2O, eliding a portion of the case does not delete it. Rather, the elided section is hidden from view behind the blue ellipses. Students can click the ellipses to see what they’re missing and further explore what interests them. Here is an example of an elision: </p>
 
     <figure>
         <img src="{{ site.baseurl }}/assets/images/elided-text.png" alt="A screenshot of a case from which some text has been elided.">
@@ -285,26 +224,14 @@ sharing-image: images/h2o-logo.svg
         <img src="{{ site.baseurl }}/assets/images/view-hidden-text.png" alt="A screenshot of a case revealing the previously hidden text.">
     </figure>
 
-    To make an elision, select the desired text, then use the annotation menu that pops up in the right margin to choose the "Elide."
-
-    <figure>
-        <img src="{{ site.baseurl }}/assets/images/elide-menu.png" alt="A screenshot of a case with text selected for elision and the annotation menu with the elide option highlighted.">
-    </figure>
-
-    <p>H2O then will hide that text, marking the elision with an ellipsis.</p>
-
-    <figure>
-        <img src="{{ site.baseurl }}/assets/images/elision-complete.png" alt="A screenshot of a case showing the successful elision of certain text.">
-    </figure>
-
-    <p>To remove the elision, click the edit icon in the right margin and select "Remove elision." </p>
+    <p>Once you have made an elision, you may remove it by clicking the edit icon in the right margin and selecting "Remove elision." </p>
 
     <figure>
         <img src="{{ site.baseurl }}/assets/images/remove-elision.png" alt="A screenshot of a case showing the menu that allows authors to remove elisions.">
     </figure>
 
-    <h3 id="replacement-text">Replacing Text</h3>
-    <p>To maintain readability, authors often want to replace elided text with their replacement text that paraphrases the hidden content or supplies needed transition words. H2O supports this through annotations that allow authors to supply replacement text for elided passages. </p>
+    <h3 id="replace">Replace</h3>
+    <p>To elide a portion of the case and replace it with a short summary, authors can use the replace tool. Students will be able to click on the summary in blue text to view the full text.</p>
     <p>To use this type of annotation, simply select the text you want to hide and then choose "Replace" from the annotation menu.</p>
 
     <figure>
@@ -323,8 +250,8 @@ sharing-image: images/h2o-logo.svg
     </figure>
 
 
-    <h3 id="highlights">Highlights</h3>
-    <p>Highlights work just as you would expect. Select the desired text, pick "Highlight" from the annotation menu, and H2O will apply a yellow background color to the selected text. </p>
+    <h3 id="highlight">Highlight</h3>
+    <p>Highlighting allows authors to highlight important parts of the case.</p>
 
     <figure>
         <img src="{{ site.baseurl }}/assets/images/highlight-menu.png" alt="A screenshot of a case showing the menu that allows authors to highlight text.">
@@ -336,49 +263,50 @@ sharing-image: images/h2o-logo.svg
 
     <p>To remove highlighting, click the edit icon in the right margin and select "Remove highlighting."</p>
 
-    <h3 id="notes">Notes</h3>
-    <p>H2O allows authors to attach notes to selected passages in any case or text resource. To add a comment, as with other annotations, select the desired text, then pick "Add note" from the annotation menu.</p>
+    <h3 id="add-note">Add note</h3>
+    <p>The note function allows authors to add their own context to a certain part of resource.</p>
 
     <figure>
         <img src="{{ site.baseurl }}/assets/images/add-note.png" alt="A screenshot of a case showing the menu that allows authors to attach notes to text.">
     </figure>
 
-    <h3 id="links">Links</h3>
-    <p>H2O allows authors to attach external links to selected passages in any case or text resource. To add a link, select the desired text, then pick "Add link" from the annotation menu and enter the URL, then press enter.</p>
+    <h3 id="add-link">Add link</h3>
+    <p>H2O allows authors to direct readers to external links relating to selected passages in any case or text resource. To add a link, select the desired text, then pick "Add link" from the annotation menu and enter the URL, then press enter.</p>
 
     <figure>
         <img src="{{ site.baseurl }}/assets/images/add-link-annotation.png" alt="A screenshot of a case showing the menu that allows authors to attach links to text.">
     </figure>
+   
+    <h3 id="correction">Correction</h3>
+    <p>H2O is powered by the Caselaw Access database of over 6M U.S. court opinions. These cases were scanned and run through Optical Character Recognition software to become machine readable. While OCR is a powerful tool, it is not perfect, and you will notice typos in the text of the cases. For the most part, the correct text can be inferred from the context, but if you’d like to “fix” those errors for your students, the Correct tool allows you to do so.</p>
 
-    <h2 id="publishing-casebooks">Publishing a Casebook</h2>
-    <p><i>Watch a short video on publishing your casebook <a href="https://about.opencasebook.org/other-resources/#publishing-video">here</a>.</i></p>
+    <h2 id="arranging-content">Arranging Content</h2>
+    <h3 id="moving-content">Moving Content</h3>
+    <p><i>Watch our <a href=https://about.opencasebook.org/other-resources/#moving-items-video>video tutorial on moving content</a>.</i></p>
+    <p>Once you’ve added resources to your H2O casebook or have found an existing book to adapt, content is easy to re-order by dragging and dropping individual resources or whole sections where you want them to go. To re-order the sections of your casebook, we recommend using the Collapse All button and then dragging and dropping sections up or down. To move individual resources, just grab the one you want and drop it in a new location. You can also easily nest content under a section heading by dragging it to the right.</p>
+    <h3 id="deleting-content">Deleting Content</h3>
+    <p>When you are working in a draft  casebook, all sections and resources will have a grey X at the right hand side. Click that and confirm that you want to delete a resource to remove it from your book. Note that deleting a section will also delete all of the content within it. To delete a section heading but keep the content within it, first move the content to another part of your book and then delete the section heading.</p>
+
+    
+    <h2 id="publishing-casebooks">Publishing Casebooks</h2>
+    <p><i>Watch our video tutorial on publishing your casebook <a href="https://about.opencasebook.org/other-resources/#publishing-video">here</a>.</i></p>
     <p>While you're working on your casebook, it remains in "Draft" mode, indicated by the yellow banner at the top of the page and by the draft label on your dashboard.</p>
     <p>When you're ready to share the book publicly, click the "Publish" button visible to the right of the contents.</p>
+    <p>You will be prompted to add some optional information to your casebook that will make it easier for others to discover and build on it, like a description. </p>
     <figure>
         <img src="{{ site.baseurl }}/assets/images/publish-casebook.png" alt="A screenshot of a draft casebook's contents page showing the Publish button on the right side of the page.">
     </figure>
-    <p>If H2O needs a little more information before it can publish your casebook, the Publish button will instead be a Finalize entries button, <a href="#finalize-entries"> detailed above.</a></p>
-    <p>Once a casebook is published, it's freely accessible to everyone online, and it can be copied, modified and adapted by any accountholders. In addition, if you're a verified author, your published casebook will appear in search results on H2O.</p>
-    <p>You also can "unpublish" a casebook. Go to the casebook and click the "Settings" tab, and then click the "Unpublish" button to remove it from public view. It then will be available on your dashboard as a private, editable casebook that you can later publish again if you wish.</p>
+    <p>If H2O needs a little more information before it can publish your casebook, the Publish button will instead be a Finalize entries button - click it to see what entries you need to complete before you can publish.</p>
+    <p>Once a casebook is published, it is freely accessible to anyone with the link to the book, and it can be copied, modified and adapted by any accountholders. In addition, if you're a Verified Professor, your published casebook will appear in search results on H2O and in Google.</p>
+    <p>You can also "unpublish" a casebook. Go to the casebook and click the "Settings" tab, and then click the "Unpublish" button to remove it from public view. It then will be available on your dashboard as a private, editable casebook that you can later publish again if you wish.</p>
     <figure>
         <img src="{{ site.baseurl }}/assets/images/unpublish-casebook.png" alt="A screenshot of a published casebook's settings tab showing the Unpublish button in the middle of the page.">
     </figure>
 
-    <h2 id="collaborating">Collaborating</h2>
-    <p>
-        Multiple authors and editors can work on a casebook together. You can invite other people to collaborate on a casebook at any time on the settings page, by supplying their email address.
-    </p>
-    <figure>
-        <img src="{{ site.baseurl }}/assets/images/invite-collaborator.png" alt="A screenshot of a published casebook's settings page showing the email field for inviting a new collaborator.">
-    </figure>
-    <p>
-        Invited collaborators will receive an email letting them know and will be able to view the casebook even if it is private. You may also allow them to edit the casebook, give them attribution so that their name appears in the list of authors, or remove them as collaborators. If you would like to hand off a casebook completely to your collaborators, you may do so by clicking the "Remove yourself from this casebook" button. Any collaborator that can edit the casebook has access to the casebook settings page, and can invite and manage collaborators.
-    </p>
-
-    <h2 id="revising-casebooks">Revising a Casebook</h2>
+    <h2 id="revising-casebooks">Revising Casebooks</h2>
     <p>H2O enables authors to revise published casebooks at any time. While you're working on a revised draft, your original published casebook remains publicly available. When you're done making changes, you can publish your revised casebook, and it will replace the prior version.</p>
 
-    <h3 id="making-changes">Making Changes</h3>
+    <h3 id="making-changes">Making changes</h3>
     <p>To revise a casebook, click the "Revise" button to the right of the casebook contents:</p>
 
     <figure>
@@ -391,7 +319,7 @@ sharing-image: images/h2o-logo.svg
         <img src="{{ site.baseurl }}/assets/images/dashboard-revised.png" alt="A screenshot of a dashboard showing a published casebook, a draft casebook, and a published casebook with a draft revision.">
     </figure>
 
-    <h3 id="publishing-changes">Publishing Changes</h3>
+    <h3 id="publishing-changes">Publishing changes</h3>
     <p>When you're done making changes, click the "Publish" button, and H2O will substitute the new, revised version of your casebook for the prior version.</p>
 
     <figure>
@@ -400,10 +328,15 @@ sharing-image: images/h2o-logo.svg
 
     <p>Please note that H2O currently does not maintain copies of prior versions of casebooks. If you want to ensure that an existing version is not replaced, then you should clone the published casebook and create a new casebook rather than revise the existing casebook.</p>
 
-    <p>If you're ready to export/print your casebook, visit the <a href="{{ site.baseurl }}/printing-casebooks">Printing Casebooks</a> section of this help guide.</p>
-
-    <h2 id="grouping-editions">Grouping multiple editions</h2>
-        <p>You can group multiple editions of the same casebook together to direct students to the most current one. Your dashboard has a <em>Manage Casebooks</em> link in the upper right corner.</p>
+    <h2 id="printing-casebooks">Printing Casebooks</h2>
+    <p><i>Watch our <a href=https://about.opencasebook.org/other-resources/#printing-casebooks>video tutorial on printing casebooks</a>.</i></p>
+    <p>Any casebook on H2O can be exported to Word to be printed, converted to a PDF document, or published as a print-on-demand book. To export a casebook click the "Export" button to the right of your casebook to begin the download to Word. Our exports are designed to be print ready, but we do apply Word styles automatically to make formatting your book fast and easy.</p> 
+    <p>See the "Reading Casebooks" section of our help guides to learn more about how your students can access, read, and take notes on the digital version of their H2O casbeook.</p>
+    
+    <h2 id="managing-casebooks">Managing Casebooks</h2>
+    
+    <h3 id="grouping-editions">Grouping multiple editions</h3>
+        <p>You can group multiple editions of the same casebook together to clean up your dashboard and direct readers to the most current one. Your dashboard has a <em>Manage Casebooks</em> link in the upper right corner.</p>
         <figure>
             <img src="{{ site.baseurl }}/assets/images/manage-casebooks.png" alt="A screenshot of the dashboard, with the manage casebook link highlighted.">
         </figure>
@@ -422,12 +355,12 @@ sharing-image: images/h2o-logo.svg
         </figure>
 
 
-    <h2 id="archiving-casebooks">Archiving Casebooks</h2>
+    <h3 id="archiving-casebooks">Archiving casebooks</h3>
     <p>If you want to remove a casebook from your dashboard for any reason, you can archive it by clicking the "Settings" tab and then clicking the "Archive" button.</p>
     <figure>
         <img src="{{ site.baseurl }}/assets/images/archive-casebook.png" alt="A screenshot of a casebook's settings tab showing the archive button.">
     </figure>
-    <p>Archived casebooks are not deleted from the database, but they're accessible to the public or visible on your dashboard. To access your own archived casebooks, click "[View Archived Casebooks]" on your dashboard.</p>
+    <p>Archived casebooks are not deleted from the database, but they will no longer be accessible to the public or visible on your dashboard. To access your own archived casebooks, click "[View Archived Casebooks]" on your dashboard.</p>
     <figure>
         <img src="{{ site.baseurl }}/assets/images/archived-casebooks-dashboard.png" alt="A screenshot of author's dashboard showing the View Archived Casebooks tab in the upper right.">
     </figure>
