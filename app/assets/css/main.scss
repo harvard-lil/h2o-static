@@ -709,54 +709,23 @@ header.blog-header {
 //  footer
 
 footer {
-  grid-area: footer;
   background: $color-blue;
   color: $color-white;
   padding-top: 40px;
-  padding-bottom: 40px;
-  font-weight: 700;
-
-  .footer-wrapper {
-    width: 90%;
-    max-width: 1072px;
-    margin-left: auto;
-    margin-right: auto;
-    display: grid;
-    grid-template-areas: "footer-links" "footer-copyright";
-    overflow: auto;
-  }
-
-  .footer-links {
-    grid-area: footer-links;
-    justify-self: left;
-
-    ul {
-      list-style-type: none;
-      margin-bottom: 0;
-      padding-left: 0;
-    }
-
-    li {
-        display: block;
-      }
-
-      a {
-        &:hover {
-          border-bottom: 2px solid $color-white;
-        }
-      }
-    }
-
-  .footer-copyright {
-    grid-area: footer-copyright;
-    font-weight: 500;
-    font-size: $size-body;
-    justify-self: right;
-    padding-left: 50%;
-
-  }
+  padding-left: 15px;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 20px;
 }
-
+body #main-footer .brand {
+ background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEEAAAAZCAYAAABuKkPfAAAABGdBTUEAALGPC/xhBQAABFtJREFUWAnFmG1ollUYx/dUZuZrUzNLRP0iQ2KYb2GBVEqigqLIPgRC6vBLgZBogV9MQfwgKFlgll9GgiPDF8bEd3F+8AVDPxhYoihi2yTX3DLUOX//x93buW+v696e6b1d8Oec8z/XyznXc97uJ1fUS9La2jqC0MPAINAE7uRyuduUPS45BvMBUScYkc8wqIsGn6ewK6My2Og/4E0Gm0nofwk+AaMM2zq4E2A7Po4Z/SaF32I65oE5oAS8CV4Hd0AtOA0OguP4fUwZFxxsA5asiWvGWxhcsYzgZsQ1i4rg+oGdjr5H76FDq8QV+uV3LWgEXZFLKM1OOnwpSbzoNkFfwecB8HmBvheivxf7ly07+OHwJ8F6MNDSMbh34aqxXRv2ZZ4Egn0DtPy7Ix9h9EzymIQmfQpM6Y5TbNbj4+vINtMkEEjL+asoWKL8i/YSMAtsBa3AkqUG+T3ceIMXdRRoKy8Dv4BHwJJvGd/EfAeVzM4EfC8EljRBjgxHRrvCUoR7CHKRLvWpjp5oJTMmcGXgkToNqZJypisB/x/GRtTRqDRukMMd3bGazpQBAeOtrN/RWRno5avE2U1lS5Jva88mMeOyTsI7TvA/Db6PwYlqZCL3VGHAr1EsUN2QXeh5W+pnQ1+U5j9PWc5S1uH8mSUKd9UIqjvekjBh01B41VKC+83hi0jOHyRQK+XpGRBXfD8tCW9gODauH2t5v1y7EsEvtzdSKsTRtvF+YS3nSCZHlUSpFXAjwSWbSqaVhNK0JOiETX0wJaN0p00C3sZOE7W2pl58PwR+9TawpIGEe7dApO89yYutwJFR5iUJeIsgeh4rEUnR83Ypk2sOOvQ8tqTeIhOcl4QhvZaEthWgBHj3/WoSoJdmKEqMJS0WmeAeJtpRs6VXkkACxjGCGlASjSRRriMBmxOcmg0GJ6qfw4d0/7AR1P9JOxN+RbE6UE5WN0Loa60gIQH6Yj0ErC0gX6ucBKhPZ4QlI/GLmXtFymaUZQhXm5aE8zjd6Rjqztbbu6AkYKPTXZ+0Qw2/WtIriOnd6TK5YNiJ6gvGgGvAk/ecjrM9th1IwAwGoTPASsD/8Is6SYDmcA5454L7kUZsbT/veq3pkSQwCD2EtLWsT17t81kkYB9lqqCjl6O3Rb8gjveQKnccK/b+tO3g2BVGM7AyLCqA9bjSFtgA+qP3KaUnR0hAdAPo3TDXUCyFq8TPYnTbbwLay+HXGPqifkK3WXs7y6/Icvy3gOeV8ANKY65KcVhPn/6M2QH0XPbkOh35vwczWwkEGE2mf3R+geel9V+BzgfrxB8GP7+TAP/R/xmr4F/pZXkmWMu/k7F1rZvB/43mdHC5axYxLV2zH+PjdMRmmYQoRiYlk7iJY534uqq9R1QYW+fEd6AE2zNhh7bDfnArJNvqJw0upPSis97y0V19l349qF6EPLCcMJn78JvYelso9SU6E4wB+tDSfw914DY4AQ6hn1/+1GPyBNO7Gkutni/JAAAAAElFTkSuQmCC);
+ background-position:0;
+ height:26px;
+ width:65px;
+ margin:10px 0;
+ color:transparent
+}
+  
 
 
 // All styles required for sticky footer:
@@ -776,7 +745,7 @@ body > footer {
   position: absolute;
   bottom: 0;
   width: 100%;
-  height: 300px;
+  height: 350px;
 }
 
 
