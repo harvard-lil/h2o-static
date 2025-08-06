@@ -90,12 +90,6 @@ jobs:
               text: "H2O Static site deployed successfully!",
               blocks:
                 - type: section
-                  fields:
-                    - type: mrkdwn
-                      text: "*Branch:*\n`${{ github.ref }}`"
-                    - type: mrkdwn
-                      text: "*Commit:*\n`${{ github.sha }}`"
-                - type: section
                   text:
                     type: mrkdwn
                     text: "View the site: <https://about.opencasebook.org|https://about.opencasebook.org>"
