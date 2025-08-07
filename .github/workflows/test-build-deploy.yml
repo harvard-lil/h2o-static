@@ -15,7 +15,7 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
-
+      
       - uses: actions/cache@v4
         with:
           path: bundle
@@ -87,9 +87,28 @@ jobs:
           webhook: ${{ secrets.SLACK_WEBHOOK_URL }}
           webhook-type: incoming-webhook
           payload: |
-              text: "H2O Static site deployed successfully!",
-              blocks:
-                - type: section
-                  text:
-                    type: mrkdwn
-                    text: "View the site: <https://about.opencasebook.org|https://about.opencasebook.org>"
+              {
+                "blocks": [
+                  {
+                    "type": "section",
+                    "text": {
+                      "type": "mrkdwn",
+                      "text": "*H2O Static site deployed successfully!*"
+                    }
+                  },
+                  {
+                    "type": "section",
+                    "text": {
+                      "type": "mrkdwn",
+                                    "text": "*Repo:*\n<https://github.com/${{ github.repository }}|`${{ github.repository }}`>\n*Branch:*\n<https://github.com/${{ github.repository }}/tree/${{ github.ref_name }}|`${{ github.ref_name }}`>\n*Commit:*\n<https://github.com/${{ github.repository }}/commit/${{ github.sha }}|`${{ github.sha }}`>"
+                    } 
+                  },
+                  {
+                    "type": "section",
+                    "text": {
+                      "type": "mrkdwn",
+                      "text": "*View the site:* <https://about.opencasebook.org|https://about.opencasebook.org>"
+                    }
+                  }
+                ]
+              }
