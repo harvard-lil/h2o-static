@@ -80,3 +80,16 @@ jobs:
         env:
           CLOUDFLARE_ZONE: ${{ secrets.CLOUDFLARE_ZONE_ID }}
           CLOUDFLARE_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+
+      - name: Notify Slack
+        uses: slackapi/slack-github-action@v2.1.1
+        with:
+          webhook: ${{ secrets.SLACK_WEBHOOK_URL }}
+          webhook-type: incoming-webhook
+          payload: |
+              text: "H2O Static site deployed successfully!",
+              blocks:
+                - type: section
+                  text:
+                    type: mrkdwn
+                    text: "View the site: <https://about.opencasebook.org|https://about.opencasebook.org>"
