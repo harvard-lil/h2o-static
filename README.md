@@ -39,3 +39,15 @@ Install and Run
 7. When you are done, press `Ctrl`+`C` and then run `docker compose down`. Then, optionally:
   - Docker: quit the Docker app
   - Docker Machine/Toolbox: run `docker-machine stop`
+
+Deployment
+----------
+
+Pushes to `develop` build and validate the site, then deploy the generated
+`build/` directory to the `h2o-static` Cloudflare Pages project through the
+shared `harvard-lil/lil-actions/cloudflare-pages-deploy` action.
+
+The Pages project, `about.opencasebook.org` DNS, and custom domain are managed
+in `harvard-lil/lil-terraform/h2o-static/cloudflare/dns`. The previous
+S3/CloudFront stack remains available for rollback during the migration bake
+period.
