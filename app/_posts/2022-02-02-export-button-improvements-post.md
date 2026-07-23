@@ -9,13 +9,13 @@ Over the past few weeks, we've deployed a handful of updates that improve the ex
 
 <!--more-->
 
-### More Reliability
+## More Reliability
 Especially in the case of longer casebooks, exports are much more reliably exported as Word documents.
 
-### Footnotes
+## Footnotes
 Footnotes - from imported CAP cases as well as those in text written by casebook authors - will be recognized by Word as footnotes, not just styled text. This means you can use your usual footnote workflow to renumber and restyle them as you'd like.
 
-### Default Styles
+## Default Styles
 Our design team overhauled the default styling for exports. Improvements include:
 
 1. Integration into Word's native styling, which makes it easier to adjust formatting across the board while maintaining document structure.

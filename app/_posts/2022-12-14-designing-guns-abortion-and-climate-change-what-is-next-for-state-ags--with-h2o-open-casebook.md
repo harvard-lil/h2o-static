@@ -8,7 +8,7 @@ This fall I’ve been working with Harvard Law School Professor Jim Tierney on a
 
 <!--more-->
 
-### The Structure
+## The Structure
 
 This course is a one credit reading group at Harvard Law School. It will consist of six meetings. Every other week will focus on one Supreme Court decision: *West Virginia v. EPA*, *New York State Rifle & Pistol Association v. Bruen*, and *Dobbs v. Jackson Women's Health Organization*. Three of the class meetings will be fairly traditional case method, focusing especially on argumentation and positioning of states and state attorneys general during the appellate process. After the groundwork for each case is set, the next week will be a practical, news event-heavy discussion of exactly how state attorneys general are reacting to the new legal landscape post-decision. 
 
@@ -18,7 +18,7 @@ Within the *Bruen* unit, the discussion will be focused on (a) the intersection 
  
 *WV v. EPA* is a little more complicated for this course, because the repercussions of this case are somewhat more abstract than in the two previous contexts. The effects of an expanding major questions doctrine are diffuse. Major questions doctrine could extend to even extraordinarily local regulations; state constitutions and regulatory schemes might implicate state versions of the major questions doctrine; state AGs played an important role in the briefing and appellate process of *WV v. EPA*; and state regulatory bodies may adapt their approaches in order to compensate for the newly-weakened federal administrative agencies. 
 
-### The Materials
+## The Materials
 
 H2O is a nonprofit open casebook platform run out of the Harvard Law School Library. We chose to use it because of its flexibility and digital-first design, and found some additional helpful features along the way. First, H2O is integrated with the [Caselaw Access Project](https://case.law), a database of nearly seven million cases. Every case we’ve needed to provide as background for this course is available in the database, and a quick search within the H2O editing window embeds the correct case. This course will also analyze well-known, foundational legal doctrines, and the H2O catalog has some ready-made lists of these types of cases ready to be added to our casebook with a single click. For instance, we wanted to provide a handful of important cases in abortion rights. We searched in H2O’s collection and found a book called “[Landmark Decisions: Birth Control and Abortion](https://opencasebook.org/casebooks/838/).” After adding it to our casebook (and appropriately crediting its author: the Harvard Law School Library), we could then immediately begin annotating the cases to suit our needs. 
  

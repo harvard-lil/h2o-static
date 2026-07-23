@@ -4,7 +4,6 @@ on:
   [push, pull_request]
 
 permissions:
-  id-token: write  # Required for OIDC
   contents: read
 
 jobs:
@@ -39,6 +38,9 @@ jobs:
         run: |
           bash ./scripts/run-tests.sh
 
+      - name: Prepare Cloudflare Pages output
+        run: cp build/404/index.html build/404.html
+
       - name: Upload build artifact
         uses: actions/upload-artifact@v4
         with:
@@ -49,36 +51,25 @@ jobs:
     runs-on: ubuntu-latest
     needs: test-build
     if: github.event_name == 'push' && github.ref == 'refs/heads/develop'
+    environment:
+      name: cloudflare-pages
+      url: https://about.opencasebook.org
     steps:
-      - uses: actions/checkout@v4
-      
       - name: Download build artifact
         uses: actions/download-artifact@v4
         with:
           name: site-build
           path: build/
 
-      - name: Configure AWS credentials via OIDC
-        uses: aws-actions/configure-aws-credentials@v4
+      - name: Deploy to Cloudflare Pages
+        uses: harvard-lil/lil-actions/cloudflare-pages-deploy@main
         with:
-          role-to-assume: arn:aws:iam::915821419033:role/github-actions
-          aws-region: us-east-1
-
-      - name: Sync to S3
-        run: aws s3 sync build s3://$AWS_S3_BUCKET --delete
+          project-name: h2o-static
+          directory: build
+          branch: develop
         env:
-          AWS_S3_BUCKET: ${{ secrets.AWS_S3_BUCKET }}
-
-      - name: Invalidate CloudFront
-        uses: koki-develop/cloudfront-invalidate-action@v1.0.4
-        with:
-          id: ${{ secrets.AWS_CLOUDFRONT_DISTRIBUTION_ID }}
-
-      - name: Purge Cloudflare cache
-        uses: jakejarvis/cloudflare-purge-action@master
-        env:
-          CLOUDFLARE_ZONE: ${{ secrets.CLOUDFLARE_ZONE_ID }}
-          CLOUDFLARE_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ vars.CLOUDFLARE_ACCOUNT_ID }}
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
 
       - name: Notify Slack
         uses: slackapi/slack-github-action@v2.1.1
