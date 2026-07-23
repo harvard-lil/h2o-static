@@ -12,7 +12,7 @@ This release is the next step in a process that began with H2O’s integration w
 Authors can use the U.S. Code integration in a variety of ways, for example by [incorporating sections of code alongside cases](https://opencasebook.org/casebooks/3471-us-code-integration-example/) and other materials in new or existing casebooks (see below), or by creating [separate statutory supplements](https://opencasebook.org/casebooks/3472-us-code-integration-supplement-example/) to augment their existing casebooks.
 ![Screenshot of casebook featuring both cases and sections of code.](/assets/images/US_code_example.png)
 
-### Ready to add sections of federal code to your book? Here’s how it works:
+## Ready to add sections of federal code to your book? Here’s how it works:
 
 <!--more-->
 
