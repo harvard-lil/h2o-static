@@ -1,4 +1,4 @@
-[![build status](https://github.com/harvard-lil/h2o-static/actions/workflows/tests.yml/badge.svg)](https://github.com/harvard-lil/h2o-static/actions)
+[![build status](https://github.com/harvard-lil/h2o-static/actions/workflows/test-build-deploy.yml/badge.svg)](https://github.com/harvard-lil/h2o-static/actions)
 
 
 Install and Run
@@ -43,11 +43,22 @@ Install and Run
 Deployment
 ----------
 
-Pushes to `develop` build and validate the site, then deploy the generated
-`build/` directory to the `h2o-static` Cloudflare Pages project through the
-shared `harvard-lil/lil-actions/cloudflare-pages-deploy` action.
+The site is served from Cloudflare Pages at https://about.opencasebook.org.
 
-The Pages project, `about.opencasebook.org` DNS, and custom domain are managed
-in `harvard-lil/lil-terraform/h2o-static/cloudflare/dns`. The previous
-S3/CloudFront stack remains available for rollback during the migration bake
-period.
+Every push and pull request builds and validates the site. Pushes to `develop`
+then deploy the generated `build/` directory to the `h2o-static` Cloudflare
+Pages project through the shared
+`harvard-lil/lil-actions/cloudflare-pages-deploy` action, in the
+`cloudflare-pages` environment. The deploy uses the org-level
+`CLOUDFLARE_PAGES_TOKEN` secret and `CLOUDFLARE_ACCOUNT_ID` variable, and posts
+to Slack through the repository's `SLACK_WEBHOOK_URL` secret.
+
+The Pages project, `about.opencasebook.org` DNS record, and custom domain are
+managed in
+[`h2o-static/cloudflare/dns`](https://github.com/harvard-lil/lil-terraform/tree/main/h2o-static/cloudflare/dns)
+in `harvard-lil/lil-terraform`.
+
+The site has no AWS hosting. The S3 bucket and CloudFront distribution that
+served it before the move to Cloudflare Pages were deleted in September 2026,
+so a rollback is a Pages rollback to an earlier deployment or a revert on
+`develop`.
