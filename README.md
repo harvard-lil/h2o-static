@@ -57,8 +57,3 @@ The Pages project, `about.opencasebook.org` DNS record, and custom domain are
 managed in
 [`h2o-static/cloudflare/dns`](https://github.com/harvard-lil/lil-terraform/tree/main/h2o-static/cloudflare/dns)
 in `harvard-lil/lil-terraform`.
-
-The site has no AWS hosting. The S3 bucket and CloudFront distribution that
-served it before the move to Cloudflare Pages were deleted in September 2026,
-so a rollback is a Pages rollback to an earlier deployment or a revert on
-`develop`.
